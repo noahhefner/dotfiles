@@ -1,6 +1,4 @@
 com.bitwarden.desktop
-com.brave.Browser
-com.github.johnfactotum.Foliate
 com.github.xournalpp.xournalpp
 com.spotify.Client
 com.usebottles.bottles
@@ -17,3 +15,9 @@ org.gnome.SoundJuicer
 org.musicbrainz.Picard
 org.onlyoffice.desktopeditors
 com.github.johnfactotum.Foliate
+de.haeckerfelix.Fragments
+io.github.Sunderland93.sway-input-config
+io.gitlab.librewolf-community
+com.github.tchx84.Flatseal
+com.makemkv.MakeMKV
+org.videolan.VLC
