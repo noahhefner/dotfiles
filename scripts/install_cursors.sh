@@ -1,13 +1,16 @@
 #/bin/bash
 
-username=$(id -u -n 1000)
-builddir=$(pwd)
+# Clone Vimix cursors repository and run install script.
 
-# Install Vimix cursors
-# Note: Need to set cursors manually in Gnome Tweaks
-echo "Installing Vimix cursors."
-cd "/home/$username/Source" || exit
+wd=$(pwd)
+github_dir="/home/$USER/github"
+
+echo "Cloning Vimix cursors repository to $github_dir."
+cd "$github_dir"
 git clone https://github.com/vinceliuice/Vimix-cursors.git
-cd Vimix-cursors || exit
+
+echo "Running Vimix cursors install script."
+cd Vimix-cursors
 ./install.sh
-cd "$builddir" || exit
+
+cd "$wd"
