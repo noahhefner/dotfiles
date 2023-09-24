@@ -1,5 +1,5 @@
+lathub io.freetubeapp.FreeTube
 com.bitwarden.desktop
-com.github.xournalpp.xournalpp
 com.spotify.Client
 com.usebottles.bottles
 com.valvesoftware.Steam
@@ -9,8 +9,6 @@ fr.handbrake.ghb
 net.cozic.joplin_desktop
 net.davidotek.pupgui2
 org.gnome.Calculator
-org.gnome.Calendar
-org.gnome.Contacts
 org.gnome.SoundJuicer
 org.musicbrainz.Picard
 org.onlyoffice.desktopeditors
