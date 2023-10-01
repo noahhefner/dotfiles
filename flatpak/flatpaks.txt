@@ -1,4 +1,4 @@
-lathub io.freetubeapp.FreeTube
+io.freetubeapp.FreeTube
 com.bitwarden.desktop
 com.spotify.Client
 com.usebottles.bottles
