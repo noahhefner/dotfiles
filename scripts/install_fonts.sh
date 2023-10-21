@@ -23,6 +23,8 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
 
 else
     
+    mkdir -p "$HOME/.local/share/fonts"
+
     DEST_DIR="$HOME/.local/share/fonts"
     
     # Make user font directory if it does not exist
@@ -38,7 +40,7 @@ else
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/JetBrainsMono.zip
 
     # Extract the font
-    unzip JetBrainsMono.zip -d {$DEST_DIR}
+    unzip JetBrainsMono.zip -d $DEST_DIR
     
     # Cleanup
     rm JetBrainsMono.zip
