@@ -7,7 +7,6 @@
 export EDITOR=nvim
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
