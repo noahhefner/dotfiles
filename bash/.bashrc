@@ -2,10 +2,17 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Ranger options
 # Use Neovim instead of Vim
 export EDITOR=nvim
+
+# Ranger options
 export RANGER_LOAD_DEFAULT_RC=FALSE
+
+# Add Golang to path if it is installed
+# Assumes Golang is installed at /usr/local/go/bin
+if [ -d "/usr/local/go/bin" ]; then
+    export PATH="$PATH:/usr/local/go/bin"
+fi
 
 # If not running interactively, don't do anything
 case $- in
