@@ -21,6 +21,6 @@ keymap("n", "<A-Up>", ":resize -2<CR>", opts)
 -- Top border down
 keymap("n", "<A-Down>", ":resize +2<CR>", opts)
 -- Left border left
-keymap("n", "<A-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 -- Left border right
-keymap("n", "<A-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
