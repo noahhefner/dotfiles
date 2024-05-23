@@ -108,3 +108,10 @@ Ranger keybindings mimic Neovim for the most part. `h j k` and `l` can be used f
 | `install_system76_keyboard_configurator.sh` | installs Keyboard configurator for System76 Launch keyboard
 | `make_dirs.sh` | create directories needed for configs
 | `validate_repo_location.sh` | ensures this repository has been cloned to the correct location (user  shome)
+
+# Other
+
+### Backup and Restore Flatpaks
+
+backup: `flatpak list --columns=application --app > flatpaks.txt`
+restore: `xargs flatpak install -y < flatpaks.txt`
