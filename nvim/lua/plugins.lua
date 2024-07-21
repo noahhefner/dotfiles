@@ -40,7 +40,7 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-	use({
+  use({
 		"neanias/everforest-nvim",
 		config = function()
 			require("everforest").setup()
@@ -81,7 +81,7 @@ return packer.startup(function(use)
 				close_if_last_window = false,
 				popup_border_style = "rounded",
 				enable_diagnostics = true,
-				enable_normal_mode_for_inputs = false,
+
 				open_files_do_not_replace_types = { "terminal", "trouble", "qf" },
 				default_component_configs = {
 					git_status = {
