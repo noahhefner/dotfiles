@@ -40,93 +40,47 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+  -- everforest theme
   use({
 		"neanias/everforest-nvim",
 		config = function()
 			require("everforest").setup()
 		end,
 	})
-	use("wbthomason/packer.nvim") -- Have packer manage itself
+  -- packer
+	use("wbthomason/packer.nvim")
+  -- bufferline
 	use({
 		"akinsho/bufferline.nvim",
 		tag = "*",
 		requires = "nvim-tree/nvim-web-devicons",
 	})
-	use({
-		"stevearc/conform.nvim",
-		config = function()
-			require("conform").setup({
-				formatters_by_ft = {
-					lua = { "stylua" },
-					go = { "gofmt" },
-				},
-			})
-		end,
-	})
-	use({
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons",
-			"MunifTanjim/nui.nvim",
-		},
-		config = function()
-			vim.fn.sign_define("DiagnosticSignError", { text = " ", texthl = "DiagnosticSignError" })
-			vim.fn.sign_define("DiagnosticSignWarn", { text = " ", texthl = "DiagnosticSignWarn" })
-			vim.fn.sign_define("DiagnosticSignInfo", { text = " ", texthl = "DiagnosticSignInfo" })
-			vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
-
-			require("neo-tree").setup({
-				close_if_last_window = false,
-				popup_border_style = "rounded",
-				enable_diagnostics = true,
-
-				open_files_do_not_replace_types = { "terminal", "trouble", "qf" },
-				default_component_configs = {
-					git_status = {
-						symbols = {
-							added = "",
-							modified = "",
-							deleted = "✖",
-							renamed = "󰁕",
-							untracked = "",
-							ignored = "",
-							unstaged = "󰄱",
-							staged = "",
-							conflict = "",
-						},
-					},
-				},
-				window = {
-					width = 32,
-				},
-				filesystem = {
-					filtered_items = {
-						visible = true,
-						hide_dotfiles = false,
-						hide_gitignored = false,
-						hide_hidden = true,
-					},
-					follow_current_file = {
-						enabled = false,
-						leave_dirs_open = false,
-					},
-					group_empty_dirs = false,
-					hijack_netrw_behavior = "open_default",
-					use_libuv_file_watcher = false,
-				},
-				buffers = {
-					follow_current_file = {
-						enabled = true,
-						leave_dirs_open = false,
-					},
-					group_empty_dirs = true,
-				},
-			})
-			vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
-		end,
-	})
+  -- lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  -- telescope
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  -- treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+  -- nvim-dashboard
+  use {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        -- config
+      }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
