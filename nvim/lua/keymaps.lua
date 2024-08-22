@@ -34,3 +34,13 @@ keymap("n", "<leader>fg", ":Telescope live_grep<CR>", {})   -- live grep
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", {})     -- buffers
 keymap("n", "<leader>fh", ":Telescope help_tags<CR>", {})   -- help tags
 
+in_wsl = os.getenv('WSL_DISTRO_NAME') ~= nil
+
+if in_wsl then
+    vim.g.clipboard = {
+        name = 'wsl clipboard',
+        copy =  { ["+"] = { "clip.exe" },   ["*"] = { "clip.exe" } },
+        paste = { ["+"] = { "nvim_paste" }, ["*"] = { "nvim_paste" } },
+        cache_enabled = true
+    }
+end
