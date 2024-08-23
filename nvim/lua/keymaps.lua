@@ -27,6 +27,7 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts) -- left border right
 -- Buffer Navigation
 keymap("n", "<A-.>", ":bnext<CR>", opts)      -- next buffer
 keymap("n", "<A-,>", ":bprevious<CR>", opts)  -- previous buffer
+keymap("n", "<A-d>", ":bd<CR>", opts)         -- delete current buffer
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", {})  -- find files
