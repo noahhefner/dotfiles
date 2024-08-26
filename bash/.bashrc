@@ -5,9 +5,6 @@
 # Use Neovim instead of Vim
 export EDITOR=nvim
 
-# Ranger options
-export RANGER_LOAD_DEFAULT_RC=FALSE
-
 # Add Golang to path if it is installed
 # Assumes Golang is installed at /usr/local/go/bin
 if [ -d "/usr/local/go/bin" ]; then
@@ -69,7 +66,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-  PS1='\[\e[0;92m\]\u \[\e[0;91m\][\[\e[0;91m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0;91m\]] \[\e[0;96m\]\W \[\e[0m\]\n> \[\e[0m\]'
+    PS1='\[\e[38;5;34;1m\]\u\[\e[0m\] \[\e[38;5;75m\]\w\[\e[0m\] \[\e[38;5;202m\]>\[\e[0m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
