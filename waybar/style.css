@@ -1,0 +1,57 @@
+/*
+ * Waybar styles
+ */
+
+* {
+  font-size: 18px;
+  min-height: 0;
+  color: white;
+}
+
+window#waybar {
+  background: #0c1821;
+}
+
+tooltip {
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+
+#workspaces button {
+  margin: 8px 3px 8px 3px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #bc4749;
+}
+
+#workspaces button.focused {
+  border: 2px solid white;
+}
+
+#clock {
+  background: #394f49;
+}
+
+#battery {
+  background: #d5573b;
+}
+
+#backlight {
+  background: #3a5a40;
+}
+
+#pulseaudio {
+  background: #184e77;
+}
+
+#network {
+  background: #777da7;
+}
+
+#mode, #battery, #clock, #backlight, #pulseaudio, #network {
+  color: #efffc8;
+  padding: 2px 12px;
+  border-radius: 4px;
+  margin: 8px 3px 8px 3px;
+}

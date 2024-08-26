@@ -1,0 +1,81 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 43,
+    "width": 1500,
+    "spacing": 0,
+    
+    "modules-left": ["clock", "sway/workspaces", "sway/mode"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "backlight", "battery", "keyboard-state", "network"],
+    
+    "keyboard-state": {
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    
+    "clock": {
+        "format": "{:%I:%M %p    %A, %B %d}",
+        "timezone": "America/New_York",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+          "mode": "month",
+          "on-scroll": 1,
+          "format": {
+            "months": "<span color='#cad3f5'><b>{}</b></span>",
+            "days": "<span color='#cad3f5'><b>{}</b></span>",
+            "today": "<span color='#eed49f'><b>{}</b></span>"
+          }
+        },
+    },
+
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    },
+
+    "battery": {
+        "bat": "BAT2",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "({time}) {capacity}% 󰢝",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "󰝟 {icon}",
+        "format-muted": "󰝟",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
