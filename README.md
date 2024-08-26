@@ -1,6 +1,6 @@
-# dot-common
+# dotfiles
 
-My dotfiles for various apps.
+Configuration files.
 
 # Keybindings
 
@@ -22,11 +22,24 @@ My dotfiles for various apps.
 
 **These keybindings should be executed in normal mode.**
 
+### Editor
+
+| Action                                       | Keybinding |
+|----------------------------------------------|------------|
+| Cursor to bottom of file                     | `mb`       |
+| Cursor to top of file                        | `mt`       |
+| Cursor to beginning of line                  | `H`        |
+| Cursor to end of line                        | `L`        |
+| Yank current line                            | `yy`       |
+| Paste                                        | 'p'        |
+| Insert newline at cursor and enter edit mode | `O`        |
+
 ### File Control
 
-| Action | Keybinding |
-|--------|------------|
-| Save | `zz` |
+| Action        | Keybinding |
+|---------------|------------|
+| Save          | `zz`       |
+| Save and Quit | `zq`       |
 
 ### Window Management
 
@@ -41,32 +54,22 @@ My dotfiles for various apps.
 | Expand vertical window size     | `ctrl+down`  |
 | Reduce vertical window size     | `ctrl+up`    |
 
-### Neo-Tree
-
-| Action        | Keybinding |
-|---------------|------------|
-| Show Neo-Tree | `fo` |
-| Hide Neo-Tree | `fc` |
-
 ### Bufferline
 
-| Action          | Keybinding |
-|-----------------|------------|
-| Next Buffer     | `alt+.` |
-| Previous Buffer | `alt+,` |
+| Action                | Keybinding |
+|-----------------------|------------|
+| Next Buffer           | `alt+.`    |
+| Previous Buffer       | `alt+,`    |
+| Delete Current Buffer | `alt+d`    |
 
-# Scripts
+### Telescope
 
-| Name | Action |
-|-|-|
-| `add_flathub_remote.sh` | adds flathub remote for flatpak
-| `dl_grub_theme.sh` | downloads GRUB theme
-| `install_cursors.sh` | downloads custom cursor pack
-| `install_fonts.sh` | downloads Nerd Font
-| `install_icons.sh` | downloads icon pack
-| `install_system76_keyboard_configurator.sh` | installs Keyboard configurator for System76 Launch keyboard
-| `make_dirs.sh` | create directories needed for configs
-| `validate_repo_location.sh` | ensures this repository has been cloned to the correct location (user  shome)
+| Action      | Keybinding   |
+|-------------|--------------|
+| Find File   | `<leader>ff` |
+| Live Grep   | `<leader>fg` |
+| Find Buffer | `<leader>fb` |
+| Help Tags   | `<leader>fh` |
 
 # Other
 
