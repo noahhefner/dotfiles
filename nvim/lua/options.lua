@@ -43,6 +43,26 @@ require("lualine").setup({
   },
 })
 
+-- configure treesitter
+require('nvim-treesitter.configs').setup({
+  ensure_installed = {
+    "lua",
+    "markdown",
+    "go",
+    "bash",
+    "css",
+    "html",
+    "json",
+    "python",
+    "javascript",
+  },
+  auto_install = true,
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+})
+
 -- configure telescope
 require("telescope").setup({
   defaults = {
