@@ -18,7 +18,7 @@ set $term kitty
 # Set launcher
 set $launcher fuzzel
 # Set power menu
-set $power nwg-bar
+# set $power nwg-bar
 
 # Start terminal
 bindsym $mod+Return exec $term
@@ -27,7 +27,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+d exec $launcher
 
 # Start nwg-bar
-bindsym $mod+Shift+p exec $power
+# bindsym $mod+Shift+p exec $power
 
 # Kill focused window
 bindsym $mod+q kill

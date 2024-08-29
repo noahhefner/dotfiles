@@ -9,10 +9,10 @@ include touchpad
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Mako notification daemon
-exec mako
+# exec mako
 
 # Background
-exec_always swaybg --mode fill --image /home/nhefner/Photos/wallpapers/maller_constructed.jpg
+exec_always swaybg --mode fill --image /home/nhefner/git/dotfiles/wallpapers/yosemite2.jpg
 
 # Waybar
 bar {
@@ -28,10 +28,10 @@ default_border pixel 4
 
 # Font for window titles and bar unless a different font
 # is used in the bar {} block below.
-font pango:Jetbrains Mono Medium Nerd Font Complete 12
+# font pango:Jetbrains Mono Medium Nerd Font Complete 12
 
 # Window gaps
 gaps inner 8px
 
 # Open RBP Imager as floating window
-for_window [app_id="org.raspberrypi.rpi-imager"] floating enable
+# for_window [app_id="org.raspberrypi.rpi-imager"] floating enable
