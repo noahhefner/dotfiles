@@ -44,20 +44,20 @@ Configuration files.
 | Start Terminal | `mod+enter` |
 | Start Launcher | `mod+d` |
 | Kill Focused Window | `mod+q` |
-| Change Focused Window | `mod+Up|Down|Left|Right` |
-| Move Focused Window | `mod+Shift+Up|Down|Left|Right`
+| Change Focused Window | `mod+Up\|Down\|Left\|Right` |
+| Move Focused Window | `mod+Shift+Up\|Down\|Left\|Right`
 | Split Horizontally | `mod+h` |
 | Split Vertically | `mod+v` |
 | Enter Fullscreen for Focused Container | `mod+f` |
-| Change Container Layout (stacked/tabbed/toggle split) | `mod+s|w|e` |
+| Change Container Layout (stacked/tabbed/toggle split) | `mod+s\|w\|e` |
 | Toggle Tiling/Floating | `mod+Shift+Space` |
 | Change focus between tiling/floating windows | `mod+space` |
 | Focus the Parent Container | `mod+a` |
-| Switch to Workspace | `mod+1|2|3|4|5|6|7|8|9|0` |
-| Move Focused Container to Workspace | `mod+Shift+1|2|3|4|5|6|7|8|9|0` |
+| Switch to Workspace | `mod+1\|2\|3\|4\|5\|6\|7\|8\|9\|0` |
+| Move Focused Container to Workspace | `mod+Shift+1\|2\|3\|4\|5\|6\|7\|8\|9\|0` |
 | Reload Sway Configuration File | `mod+Shift+c` |
 | Enter Resize Mode | `mod+r` |
-| Resize Window (while in resize mode) | `Up|Down|Left|Right` |
+| Resize Window (while in resize mode) | `Up\|Down\|Left\|Right` |
 | Exit Resize Mode (while in resize mode) | `esc` |
 
 ## Kitty
