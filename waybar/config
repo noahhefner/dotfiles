@@ -7,23 +7,14 @@
     
     "modules-left": ["clock", "sway/workspaces", "sway/mode"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "backlight", "battery", "keyboard-state", "network"],
-    
-    "keyboard-state": {
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
+    "modules-right": ["wireplumber", "backlight", "battery", "keyboard-state", "network"],
     
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
     
     "clock": {
-        "format": "{:%I:%M %p    %A, %B %d}",
+        "format": "{:%I:%M %p  %A, %B %d}",
         "timezone": "America/New_York",
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
@@ -38,7 +29,7 @@
     },
 
     "network": {
-        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-wifi": "{essid} {signalStrength}%  ",
         "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
@@ -49,7 +40,14 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "format-icons": [""]
+    },
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "Muted ",
+        "on-click": "flatpak run org.pipewire.Helvum",
+        "format-icons": ["", "", ""]
     },
 
     "battery": {
@@ -64,18 +62,4 @@
         "format-icons": ["", "", "", "", ""],
         "max-length": 25
     },
-
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": "󰝟 {icon}",
-        "format-muted": "󰝟",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    }
 }

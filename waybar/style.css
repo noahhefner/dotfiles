@@ -3,9 +3,10 @@
  */
 
 * {
+  font-family: monospace;
   font-size: 18px;
   min-height: 0;
-  color: white;
+  color: #efffc8;
 }
 
 window#waybar {
@@ -13,45 +14,26 @@ window#waybar {
 }
 
 tooltip {
-  background: rgba(0, 0, 0, 1);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 2px solid #efffc8;
   border-radius: 4px;
+  background: #394f49;
 }
 
 #workspaces button {
   margin: 8px 3px 8px 3px;
   padding: 0 5px;
   border-radius: 4px;
-  background: #bc4749;
-}
-
-#workspaces button.focused {
-  border: 2px solid white;
-}
-
-#clock {
   background: #394f49;
 }
 
-#battery {
-  background: #d5573b;
+#workspaces button.focused {
+  border: 2px solid #efffc8;
 }
 
-#backlight {
-  background: #3a5a40;
-}
-
-#pulseaudio {
-  background: #184e77;
-}
-
-#network {
-  background: #777da7;
-}
-
-#mode, #battery, #clock, #backlight, #pulseaudio, #network {
-  color: #efffc8;
+#wireplumber, #mode, #battery, #clock, #backlight, #network {
+  background: #394f49;
   padding: 2px 12px;
   border-radius: 4px;
   margin: 8px 3px 8px 3px;
+  border: 2px solid #efffc8;
 }
