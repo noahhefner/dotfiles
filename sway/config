@@ -1,7 +1,6 @@
 # Sway configuration
 
 include ~/.config/sway/keybindings
-include ~/.config/sway/colors
 include @sysconfdir@/sway/config.d/*
 include touchpad
 
@@ -9,7 +8,7 @@ include touchpad
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Mako notification daemon
-# exec mako
+exec mako
 
 # Background
 exec_always swaybg --mode fill --image /home/nhefner/git/dotfiles/wallpapers/yosemite2.jpg
