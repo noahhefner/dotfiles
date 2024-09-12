@@ -3,5 +3,8 @@
     "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Everforest Dark",
+    "everforest.darkContrast": "hard",
+    "everforest.darkWorkbench": "flat"
 }
