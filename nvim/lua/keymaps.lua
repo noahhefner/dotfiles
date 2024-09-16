@@ -12,6 +12,10 @@ keymap("n", "L", "$", opts)   -- cursor to end of line
 keymap("n", "zz", ":w<CR>", opts)   -- save
 keymap("n", "zq", ":wq<CR>", opts)  -- save and quit
 
+-- move up/down by display lines instead of logical lines
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+
 -- Window Navigation
 keymap("n", "<C-h>", "<C-w>h", opts)  -- go left
 keymap("n", "<C-l>", "<C-w>l", opts)  -- go right
