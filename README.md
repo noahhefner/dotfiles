@@ -72,6 +72,7 @@ Configuration files.
 | Close Kitty Window            | `ctrl+shift+w`      |
 | Move To Next Kitty Window     | `ctrl+shift+]`      |
 | Move To Previous Kitty Window | `ctrl+shift+[`      |
+| Enter resize mode for current Window | `ctrl+shift+r` |
 
 ## Neovim
 
