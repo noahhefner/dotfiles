@@ -87,7 +87,7 @@ Configuration files.
 | Cursor to beginning of line                  | `H`        |
 | Cursor to end of line                        | `L`        |
 | Yank current line                            | `yy`       |
-| Paste                                        | 'p'        |
+| Paste                                        | `p`        |
 | Insert newline at cursor and enter edit mode | `O`        |
 
 ### File Control
