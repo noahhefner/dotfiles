@@ -127,9 +127,8 @@ Configuration files.
 | Find Buffer | `<leader>fb` |
 | Help Tags   | `<leader>fh` |
 
-# Other
+# Flatpaks
 
-### Backup and Restore Flatpaks
+Create list of installed Flatpaks: `flatpak list --columns=application --app > flatpaks.txt`
 
-backup: `flatpak list --columns=application --app > flatpaks.txt`
-restore: `xargs flatpak install -y < flatpaks.txt`
+Install Flatpaks from file: `xargs flatpak install -y < flatpaks.txt`
