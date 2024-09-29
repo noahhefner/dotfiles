@@ -4,11 +4,12 @@ Configuration files.
 
 # Programs
 
-| Program | Install Method |
-| ----------- | -------------- |
+| Program | Install Method | Notes |
+| ------- | -------------- |------ |
 | Librewolf | [Instructions](https://librewolf.net/installation/debian/) |
 | Kitty | [Instructions](https://sw.kovidgoyal.net/kitty/binary/) |
 | Neovim | [Build from Source](https://github.com/neovim/neovim/blob/master/BUILD.md)
+| Mullvad VPN | [Instructions](https://mullvad.net/en/help/install-mullvad-app-linux) |
 | Flatseal | Flatpak |
 | Dolphin | Flatpak |
 | Pulse Audio Volume Control | `packages.txt` |
@@ -32,6 +33,8 @@ Configuration files.
 | qtwayland5 | `packages.txt` |
 | gammastep | `packages.txt` |
 | network-manager | `packages.txt` |
+| libnss3 (needed for Mullvad VPN) | `packages.txt` |
+| pcscd | `packages.txt` | For YubiCo Authenticator |
 
 # Keybindings
 
