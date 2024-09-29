@@ -18,4 +18,6 @@ mako-notifier
 qtwayland5
 gammastep
 network-manager
+libnss3
+pcscd
 network-manager-gnome
