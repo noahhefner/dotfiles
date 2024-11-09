@@ -13,6 +13,7 @@ pavucontrol
 xdg-utils
 ssh
 xwayland
+grimshot
 build-essential
 mako-notifier
 qtwayland5
