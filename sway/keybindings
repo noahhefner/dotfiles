@@ -18,7 +18,6 @@ set $term kitty
 # Set launcher
 set $launcher fuzzel
 # Set power menu
-# set $power nwg-bar
 
 # Start terminal
 bindsym $mod+Return exec $term
@@ -123,6 +122,12 @@ mode "resize" {
 
 # Enter resize mode
 bindsym $mod+r mode "resize"
+
+# grimshot (screenshots)
+bindsym Mod4+p       exec grimshot save active
+bindsym Mod4+Shift+p exec grimshot save area
+bindsym Mod4+Mod1+p  exec grimshot save output
+bindsym Mod4+Ctrl+p  exec grimshot save window
 
 # Adjust brightness
 bindsym XF86MonBrightnessDown exec 'brightnessctl s 5%-'
