@@ -11,7 +11,7 @@ Configuration files.
 | Neovim | [Build from Source](https://github.com/neovim/neovim/blob/master/BUILD.md)
 | Mullvad VPN | [Instructions](https://mullvad.net/en/help/install-mullvad-app-linux) |
 | Flatseal | Flatpak |
-| Dolphin | Flatpak |
+| Nautilus | Flatpak |
 | Pulse Audio Volume Control | `packages.txt` |
 | Gnome Network Manager | `packages.txt` |
 | Sway | `packages.txt` |
