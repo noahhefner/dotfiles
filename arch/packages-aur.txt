@@ -1,3 +1,4 @@
 fuzzel
 grimshot
+vscodium-bin
 librewolf-bin

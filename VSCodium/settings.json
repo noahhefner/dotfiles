@@ -160,7 +160,7 @@
     "prettier.endOfLine": "crlf",
     "files.eol": "\r\n",
     "update.showReleaseNotes": false,
-    "editor.fontFamily": "Cascadia Code, 'Courier New', monospace",
+    "editor.fontFamily": "Hack Nerd Font Mono, 'Courier New', monospace",
     "workbench.editor.enablePreview": false,
     "workbench.editor.wrapTabs": true,
     "explorer.compactFolders": false,
