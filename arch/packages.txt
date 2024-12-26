@@ -2,6 +2,7 @@ sway
 swaybg
 swaylock
 swayidle
+libreoffice-still
 ttf-hack-nerd
 waybar
 unzip
