@@ -21,3 +21,7 @@ networkmanager
 nss
 brightnessctl
 xdg-utils
+xorg-xwayland
+vlc
+ly
+kitty-terminfo

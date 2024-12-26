@@ -1,12 +1,7 @@
 com.spotify.Client
-com.usebottles.bottles
 com.yubico.yubioath
-fr.handbrake.ghb
 org.gnome.Calculator
 org.musicbrainz.Picard
 de.haeckerfelix.Fragments
 com.github.tchx84.Flatseal
-com.makemkv.MakeMKV
-org.signal.Signal
-org.videolan.VLC
 ca.littlesvr.asunder
