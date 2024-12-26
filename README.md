@@ -2,10 +2,6 @@
 
 Configuration files for Linux programs. Many configurations are distribution-agnostic. Any configurations, scripts, or files that are specific to a distribution are contained in the subdirectory for that distribution.
 
-# Fonts
-
-- [Monaspace](https://github.com/githubnext/monaspace): Download from GitHub releases page.
-
 # Keybindings
 
 ## Sway
