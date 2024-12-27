@@ -47,7 +47,6 @@
     "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "Muted ",
-        "on-click": "flatpak run org.pipewire.Helvum",
         "format-icons": ["", "", ""]
     },
 

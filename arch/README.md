@@ -8,6 +8,16 @@ Installation instructions for the `linux-surface` kernel can be found [here](htt
 
 `systemd-boot` configuration also needs to be modified to add the kernel to the boot menu. Instructions for that can be found [here](https://linuxiac.com/arch-linux-switching-between-multiple-kernels/).
 
+# Display Manager
+
+I like `lightdm` with `lightdm-gtk-greeter` for my display manager. With a HiDPI screen like that on the Surface Book 2, the greeter UI can be quite small. To fix this simply make the following addition to `/etc/environment`:
+
+```sh
+GDK_SCALE=2
+```
+
+This will scale up the greeter UI by 200%, making it much more readable.
+
 # Ungoogled Chromium
 
 Ungoogled Chromium does not have Wayland support enabled by default. After installing the package from the AUR, launch chromium with:
@@ -18,14 +28,6 @@ chromium --enable-features=UseOzonePlatform --ozone-platform=wayland
 
 Navigate to `chrome://flags/` and set "Preferred Ozone platform" to "Wayland". This enabled Wayland support.
 
-# Ly display manager
-
-Ly display manager service needs to be enabled after installing the `ly` package:
-
-```sh
-sudo systemctl enable ly
-```
-
-# Surface Book 2 Notes
+# Surface Book 2 Setup
 
 Use the archinstall script to setup the installation. After the install, it will prompt you to chroot into the system to do any post-install setup steps. Hit `Y`. Install the `linux-firmware-marvell` package. This is needed for WiFi to work as the SB2 has a Marvell chip.

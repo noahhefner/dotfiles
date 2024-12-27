@@ -25,3 +25,9 @@ xorg-xwayland
 vlc
 ly
 kitty-terminfo
+nautilus
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
+lightdm
+lightdm-gtk-greeter
