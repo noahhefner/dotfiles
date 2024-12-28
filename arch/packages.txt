@@ -31,3 +31,4 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 lightdm
 lightdm-gtk-greeter
+iptsd

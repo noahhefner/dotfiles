@@ -3,3 +3,4 @@ grimshot
 vscodium-bin
 librewolf-bin
 ungoogled-chromium-bin
+libwacom-surface

@@ -18,6 +18,8 @@ GDK_SCALE=2
 
 This will scale up the greeter UI by 200%, making it much more readable.
 
+For more `lightdm` configuration notes, see `/lightdm` in this repository.
+
 # Ungoogled Chromium
 
 Ungoogled Chromium does not have Wayland support enabled by default. After installing the package from the AUR, launch chromium with:
