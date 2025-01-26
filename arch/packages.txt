@@ -32,3 +32,5 @@ xdg-desktop-portal-wlr
 lightdm
 lightdm-gtk-greeter
 iptsd
+wireguard-tools
+systemd-resolvconf
