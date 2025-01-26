@@ -34,3 +34,13 @@ lightdm-gtk-greeter
 iptsd
 wireguard-tools
 systemd-resolvconf
+npm
+go
+docker
+docker-compose
+handbrake
+ncspot
+neovim
+nvidia-dkms
+nodejs
+blueman
