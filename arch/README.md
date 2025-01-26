@@ -20,6 +20,10 @@ This will scale up the greeter UI by 200%, making it much more readable.
 
 For more `lightdm` configuration notes, see `/lightdm` in this repository.
 
+# WireGaurd
+
+Use `wg-quick` command to enable/disable VPN connection to Homelab. Arch needs the `systemd-resolvconf` package to be installed to facilitate this. After installing the package, it needs to be started with `systemctl start systemd-resolved.service`.
+
 # Ungoogled Chromium
 
 Ungoogled Chromium does not have Wayland support enabled by default. After installing the package from the AUR, launch chromium with:
