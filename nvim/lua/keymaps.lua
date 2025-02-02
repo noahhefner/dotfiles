@@ -33,6 +33,9 @@ keymap("n", "<A-.>", ":bnext<CR>", opts)      -- next buffer
 keymap("n", "<A-,>", ":bprevious<CR>", opts)  -- previous buffer
 keymap("n", "<A-d>", ":bd<CR>", opts)         -- delete current buffer
 
+-- nvim-tree
+keymap("n", "<C-f>", ":NvimTreeToggle<CR>", {})
+
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", {})  -- find files
 keymap("n", "<leader>fg", ":Telescope live_grep<CR>", {})   -- live grep

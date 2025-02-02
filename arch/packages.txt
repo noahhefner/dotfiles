@@ -44,3 +44,5 @@ neovim
 nvidia-dkms
 nodejs
 blueman
+ripgrep
+tmux

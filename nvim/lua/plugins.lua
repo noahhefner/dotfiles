@@ -64,6 +64,13 @@ return packer.startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- nvim-tree
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
   -- treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -80,6 +87,11 @@ return packer.startup(function(use)
     end,
     requires = {'nvim-tree/nvim-web-devicons'}
   }
+  -- vim-tmux-navigator
+  use {
+    'christoomey/vim-tmux-navigator'
+  }
+
 
 	if packer_bootstrap then
 		require("packer").sync()
