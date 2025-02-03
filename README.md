@@ -102,6 +102,12 @@ Lots of configs use the `Hack Nerd Font Mono` font. For Arch, this font is insta
 | Find Buffer | `<leader>fb` |
 | Help Tags   | `<leader>fh` |
 
+### nvim-tree
+
+| Action      | Keybinding   |
+|-------------|--------------|
+| Make folder root of tree  | `C+]` |
+
 ## tmux
 
 Most tmux keybindings are left as the defaults. 
