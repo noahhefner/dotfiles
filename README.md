@@ -83,6 +83,8 @@ Lots of configs use the `Hack Nerd Font Mono` font. For Arch, this font is insta
 | Expand vertical window size     | `ctrl+down`  |
 | Reduce vertical window size     | `ctrl+up`    |
 
+**Note**: The `christoomey/vim-tmux-navigator` Neovim plugin allows the window navigation keys to work for both Neovim windows and tmux panes.
+
 ### Bufferline
 
 | Action                | Keybinding |
@@ -99,3 +101,42 @@ Lots of configs use the `Hack Nerd Font Mono` font. For Arch, this font is insta
 | Live Grep   | `<leader>fg` |
 | Find Buffer | `<leader>fb` |
 | Help Tags   | `<leader>fh` |
+
+## tmux
+
+Most tmux keybindings are left as the defaults. 
+
+### Leader
+
+`crl+h`
+
+### Pane Navigation
+
+The `christoomey/vim-tmux-navigator` tmux plugin allows the window navigation keys to work for both Neovim windows and tmux panes. The tmux leader key is not needed for these commands.
+
+| Action                        | Keybinding   |
+|-------------------------------|--------------|
+| Move to left pane             | `ctrl+h`     |
+| Move to right pane            | `ctrl+l`     |
+| Move to lower pane            | `ctrl+j`     |
+| Move to upper pane            | `ctrl+k`     |
+
+More pane commands:
+
+| Action                     | Keybinding               |
+|----------------------------|--------------------------|
+| New vertical pane          | `<leader> b`             |
+| New horizontal pane        | `<leader> "`             |
+| Resize Pane                | `<leader> + <arrow key>` |
+| Close pane                 | `<leader> x`             |
+| Show pane numbers (follow this command with the number of a pane to move focus to that pane) | `<leader> q` |
+
+### Windows
+
+| Action                        | Keybinding   |
+|-------------------------------|--------------|
+| New window                    | `<leader> c` |
+| Go to window `n` (n = number) | `<leader> n` |
+| List all windows              | `<leader> w` |
+
+**Note**: Closing all panes on a window also closes the window.
