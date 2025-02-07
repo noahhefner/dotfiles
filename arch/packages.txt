@@ -25,7 +25,6 @@ xorg-xwayland
 vlc
 ly
 kitty-terminfo
-nautilus
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
@@ -46,3 +45,7 @@ nodejs
 blueman
 ripgrep
 tmux
+dolpihin
+taglib
+kdegraphics-thumbnailers
+ffmpegthumbs
