@@ -106,7 +106,8 @@ Lots of configs use the `Hack Nerd Font Mono` font. For Arch, this font is insta
 
 | Action      | Keybinding   |
 |-------------|--------------|
-| Make folder root of tree  | `C+]` |
+| Toggle `nvim-tree` | `ctrl+f` |
+| Make folder root of tree  | `ctrl+]` |
 
 ## tmux
 
