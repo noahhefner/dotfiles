@@ -115,7 +115,7 @@ Most tmux keybindings are left as the defaults.
 
 ### Leader
 
-`crl+h`
+`ctrl+b`
 
 ### Pane Navigation
 
