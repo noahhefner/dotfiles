@@ -132,7 +132,7 @@ More pane commands:
 
 | Action                     | Keybinding               |
 |----------------------------|--------------------------|
-| New vertical pane          | `<leader> b`             |
+| New vertical pane          | `<leader> %`             |
 | New horizontal pane        | `<leader> "`             |
 | Resize Pane                | `<leader> + <arrow key>` |
 | Close pane                 | `<leader> x`             |
