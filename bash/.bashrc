@@ -66,7 +66,13 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[38;5;34;1m\]\u\[\e[0m\] \[\e[38;5;75m\]\w\[\e[0m\] \[\e[38;5;202m\]>\[\e[0m\] '
+    PROMPT_COMMAND='
+      BRANCH=$(git branch --show-current 2>/dev/null)
+      if [ -n "$BRANCH" ]; then
+        PS1="\[\e[93m\]\h\[\e[0m\] \[\e[92m\]\u\n\[\e[96m\]\w\n\[\e[91m\]$BRANCH\[\e[0m\] \[\e[91m\]>\[\e[0m\] "
+      else
+        PS1="\[\e[93m\]\h\[\e[0m\] \[\e[92m\]\u\n\[\e[96m\]\w\n\[\e[91m\]>\[\e[0m\] "
+      fi'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
