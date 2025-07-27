@@ -23,6 +23,7 @@ alias gs='git status'
 alias gaa='git add --all'
 alias gc='git commit -m'
 alias gd='git diff'
+alias gp='git push'
 
 # Fix Kitty ssh issues
 if [ "$TERM" = "kitty" ]; then
