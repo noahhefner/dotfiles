@@ -1,12 +1,14 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
+#  ______  ___   _____ _   _ ______  _____ 
+#  | ___ \/ _ \ /  ___| | | || ___ \/  __ \
+#  | |_/ / /_\ \\ `--.| |_| || |_/ /| /  \/
+#  | ___ \  _  | `--. \  _  ||    / | |    
+#  | |_/ / | | |/\__/ / | | || |\ \ | \__/\
+#  \____/\_| |_/\____/\_| |_/\_| \_| \____/
+                                      
 # Use Neovim instead of Vim
 export EDITOR=nvim
 
 # Add Golang to path if it is installed
-# Assumes Golang is installed at /usr/local/go/bin
 if [ -d "/usr/local/go/bin" ]; then
     export PATH="$PATH:/usr/local/go/bin"
 fi
@@ -65,6 +67,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# set prompt
 if [ "$color_prompt" = yes ]; then
     PROMPT_COMMAND='
       BRANCH=$(git branch --show-current 2>/dev/null)
@@ -87,18 +90,7 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-fi
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
+# Alias definitions
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
