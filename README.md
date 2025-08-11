@@ -2,6 +2,16 @@
 
 Configuration files for Linux programs. Many configurations are distribution-agnostic. Any configurations, scripts, or files that are specific to a distribution are contained in the subdirectory for that distribution.
 
+# Setup
+
+```sh
+git clone "https://github.com/noahhefner/dotfiles.git" $HOME/.local/share/dotfiles >/dev/null
+```
+
+```sh
+source $HOME/.local/share/dotfiles/install.sh
+```
+
 # Fonts
 
 Lots of configs use the `Hack Nerd Font Mono` font. For Arch, this font is installed via the `ttf-hack-nerd` package. I have not tested how to install this font on Debian derrivitives.
