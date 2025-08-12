@@ -7,6 +7,7 @@ sudo pacman -Sy --noconfirm --needed \
     swaylock \
     swayidle \
     waybar \
+    kitty \
     qt5-wayland \
     qt6-wayland \
     mako \

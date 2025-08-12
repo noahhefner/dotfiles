@@ -26,3 +26,6 @@ source $DOTFILES_INSTALL/system_config/timezones.sh
 # Desktop
 source $DOTFILES_INSTALL/desktop/desktop.sh
 source $DOTFILES_INSTALL/desktop/fonts.sh
+
+# Application Configuration Files
+source $DOTFILES_INSTALL/app_config/config.sh
