@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\nInstalling desktop packages..."
-yay -S --noconfirm --needed \
+sudo pacman -Sy --noconfirm --needed \
     sway \
     swaybg \
     swaylock \
@@ -16,7 +16,7 @@ yay -S --noconfirm --needed \
     xorg-xwayland \
     xdg-desktop-portal-hyprland \
     greetd \
-    cosmic-greeter
+    greetd-regreet
 
 DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
 
