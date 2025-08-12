@@ -1,0 +1,2 @@
+exec "cosmic-greeter; swaymsg exit"
+include /etc/sway/config.d/*

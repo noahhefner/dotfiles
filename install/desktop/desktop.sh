@@ -16,3 +16,15 @@ yay -S --noconfirm --needed \
     xdg-desktop-portal-hyprland \
     greetd \
     cosmic-greeter
+
+DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
+
+# Copy greetd configuration files
+sudo cp $DOTFILES_CONFIG/greetd/config.toml /etc/greetd/config.toml
+sudo cp $DOTFILES_CONFIG/greetd/sway-config /etc/greetd/sway-config
+
+# Enable greetd service
+systemctl enable greetd.service
+
+# Change boot target to GUI mode
+sudo systemctl set-default graphical.target
