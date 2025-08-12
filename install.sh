@@ -17,10 +17,12 @@ git clone "https://github.com/noahhefner/dotfiles.git" $HOME/.local/share/dotfil
 
 DOTFILES_INSTALL=$HOME/.local/share/dotfiles/install
 
-# Install prerequisites
+# Prerequisites
 source $DOTFILES_INSTALL/preflight/aur.sh
 
 # System configuration
-source $DOTFILES_INSTALL/system_config/power.sh
 source $DOTFILES_INSTALL/system_config/timezones.sh
-source $DOTFILES_INSTALL/system_config/fonts.sh
+
+# Desktop
+source $DOTFILES_INSTALL/desktop/desktop.sh
+source $DOTFILES_INSTALL/desktop/fonts.sh
