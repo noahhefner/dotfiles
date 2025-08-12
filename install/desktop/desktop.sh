@@ -15,7 +15,7 @@ sudo pacman -Sy --noconfirm --needed \
     brightnessctl \
     xdg-utils \
     xorg-xwayland \
-    xdg-desktop-portal-hyprland \
+    xdg-desktop-portal-gtk \
     greetd \
     greetd-regreet
 

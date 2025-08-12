@@ -1,19 +1,12 @@
 [{
     "layer": "top",
-    "output": "eDP-1",
     "position": "top",
     "height": 43,
-    "width": 1500,
     "spacing": 0,
     
     "modules-left": ["clock", "sway/workspaces", "sway/mode"],
     "modules-center": [],
-    "modules-right": ["wireplumber", "backlight", "battery", "keyboard-state", "network"],
-    
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    
+       
     "clock": {
         "format": "{:%I:%M %p  %A, %B %d}",
         "timezone": "America/New_York",
@@ -26,69 +19,6 @@
             "days": "<span color='#cad3f5'><b>{}</b></span>",
             "today": "<span color='#eed49f'><b>{}</b></span>"
           }
-        },
-    },
-
-    "network": {
-        "format-wifi": "{essid} {signalStrength}%  ",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor"
-    },
-
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}% {icon}",
-        "format-icons": [""]
-    },
-
-    "wireplumber": {
-        "format": "{volume}% {icon}",
-        "format-muted": "Muted ",
-        "format-icons": ["", "", ""]
-    },
-
-    "battery": {
-        "bat": "BAT2",
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "({time}) {capacity}% 󰢝",
-        "format-icons": ["", "", "", "", ""],
-        "max-length": 25
-    },
-},
-{
-    "layer": "top",
-    "output": "DP-5",
-    "position": "top",
-    "height": 43,
-    "width": 1920,
-    "spacing": 0,
-    
-    "modules-left": ["clock", "sway/workspaces", "sway/mode"],
-    
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    
-    "clock": {
-        "format": "{:%I:%M %p  %A, %B %d}",
-        "timezone": "America/New_York",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "calendar": {
-          "mode": "month",
-          "on-scroll": 1,
-          "format": {
-            "months": "<span color='#cad3f5'><b>{}</b></span>",
-            "days": "<span color='#cad3f5'><b>{}</b></span>",
-            "today": "<span color='#eed49f'><b>{}</b></span>"
-          }
-        },
-    },
-   }]
+        }
+    }
+}]
