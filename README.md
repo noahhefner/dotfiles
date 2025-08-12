@@ -5,11 +5,7 @@ Configuration files for Linux programs. Many configurations are distribution-agn
 # Setup
 
 ```sh
-git clone "https://github.com/noahhefner/dotfiles.git" $HOME/.local/share/dotfiles >/dev/null
-```
-
-```sh
-source $HOME/.local/share/dotfiles/install.sh
+curl -s https://raw.githubusercontent.com/noahhefner/dotfiles/refs/heads/main/install.sh | bash
 ```
 
 # Fonts

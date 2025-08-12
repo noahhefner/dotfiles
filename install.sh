@@ -6,6 +6,15 @@ set -e
 clear
 echo -e "\nNoah's Linux Config\n"
 
+# Install git
+echo -e "\nInstalling git..."
+sudo pacman -Sy --noconfirm --needed git
+
+# Clone this repository
+echo -e "\nCloning dotfiles repo from: https://github.com/noahhefner/dotfiles.git"
+rm -rf $HOME/.local/share/dotfiles/
+git clone "https://github.com/noahhefner/dotfiles.git" $HOME/.local/share/dotfiles >/dev/null
+
 DOTFILES_INSTALL=$HOME/.local/share/dotfiles/install
 
 # Install prerequisites
@@ -13,5 +22,5 @@ source $DOTFILES_INSTALL/preflight/aur.sh
 
 # System configuration
 source $DOTFILES_INSTALL/system_config/power.sh
-source $DOTFILES_INSTALL/timezones.sh
-source $DOTFILES_INSTALL/fonts.sh
+source $DOTFILES_INSTALL/system_config/timezones.sh
+source $DOTFILES_INSTALL/system_config/fonts.sh
