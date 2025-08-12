@@ -7,4 +7,4 @@ sudo pacman -Sy --needed --noconfirm git base-devel
 rm -rf $HOME/.local/share/yay
 git clone "https://aur.archlinux.org/yay.git" $HOME/.local/share/yay >/dev/null
 cd $HOME/.local/share/yay
-makepkg -si --no-confirm
+makepkg -si --noconfirm
