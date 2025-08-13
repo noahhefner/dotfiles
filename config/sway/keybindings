@@ -17,16 +17,12 @@ floating_modifier $mod normal
 set $term kitty
 # Set launcher
 set $launcher fuzzel
-# Set power menu
 
 # Start terminal
 bindsym $mod+Return exec $term
 
 # Start launcher
 bindsym $mod+d exec $launcher
-
-# Start nwg-bar
-# bindsym $mod+Shift+p exec $power
 
 # Kill focused window
 bindsym $mod+q kill
@@ -123,12 +119,6 @@ mode "resize" {
 # Enter resize mode
 bindsym $mod+r mode "resize"
 
-# grimshot (screenshots)
-bindsym Mod4+p       exec grimshot save active
-bindsym Mod4+Shift+p exec grimshot save area
-bindsym Mod4+Mod1+p  exec grimshot save output
-bindsym Mod4+Ctrl+p  exec grimshot save window
-
 # Adjust brightness
 bindsym XF86MonBrightnessDown exec 'brightnessctl s 5%-'
 bindsym XF86MonBrightnessUp exec 'brightnessctl s +5%'
@@ -137,3 +127,9 @@ bindsym XF86MonBrightnessUp exec 'brightnessctl s +5%'
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ 5%-
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
+
+# grimshot (screenshots)
+bindsym Mod4+p       exec grimshot save active
+bindsym Mod4+Shift+p exec grimshot save area
+bindsym Mod4+Mod1+p  exec grimshot save output
+bindsym Mod4+Ctrl+p  exec grimshot save window

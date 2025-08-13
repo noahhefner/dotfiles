@@ -1,8 +1,8 @@
 # Sway configuration
 
-include ~/.config/sway/keybindings
+include $HOME/.config/sway/keybindings
+include $HOME/.config/sway/colors
 include @sysconfdir@/sway/config.d/*
-include touchpad
 
 # Fix GTK+ applications take 20 seconds to start
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -11,23 +11,15 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 exec mako
 
 # Background
-exec_always swaybg --mode fill --image /home/nhefner/git/dotfiles/wallpapers/yosemite2.jpg
+exec_always swaybg --mode fill --image $HOME/.local/share/dotfiles/wallpapers/arch.png
 
 # Waybar
 bar {
   swaybar_command waybar
 }
 
-# Mouse settings
-# https://www.mankier.com/5/sway-input
-input 1133:49281:Logitech_Gaming_Mouse_G900 accel_profile flat
-
 # Remove header and keep only 2px border
 default_border pixel 4
 
 # Window gaps
 gaps inner 8px
-
-# Display configuration
-output DP-5 mode 1920x1080@119.982Hz pos 0 0
-output eDP-1 pos 1920 0 scale 2
