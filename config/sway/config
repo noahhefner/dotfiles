@@ -23,3 +23,5 @@ default_border pixel 4
 
 # Window gaps
 gaps inner 8px
+
+output * mode 1920x1080 pos 1920 0
