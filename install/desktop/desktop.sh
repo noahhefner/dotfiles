@@ -19,6 +19,14 @@ sudo pacman -Sy --noconfirm --needed \
     greetd \
     greetd-regreet
 
+echo -e "\nInstalling desktop packages from AUR..."
+yay -S --noconfirm --needed \
+    fuzzel \
+    grimshot \
+    vscodium-bin \
+    librewolf-bin \
+    localsend-bin
+
 DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
 
 # Copy greetd configuration files
