@@ -21,11 +21,7 @@ sudo pacman -Sy --noconfirm --needed \
 
 echo -e "\nInstalling desktop packages from AUR..."
 yay -S --noconfirm --needed \
-    fuzzel \
-    grimshot \
-    vscodium-bin \
-    librewolf-bin \
-    localsend-bin
+    fuzzel
 
 DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
 
