@@ -17,5 +17,3 @@ cp -R $DOTFILES_CONFIGS/kitty $HOME/.config/
 echo -e "\nCopying bash configuration files..."
 cp $DOTFILES_CONFIGS/bash/.bashrc $HOME/
 cp $DOTFILES_CONFIGS/bash/.bash_aliases $HOME/
-echo -e "\nSourcing .bashrc..."
-source $HOME/.bashrc
