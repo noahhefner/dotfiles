@@ -1,11 +1,11 @@
 [{
     "layer": "top",
     "position": "top",
-    "height": 43,
     "spacing": 0,
     
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
+    "modules-right": ["network"],
        
     "clock": {
         "format": "{:%I:%M %p  %A, %B %d}",

@@ -7,7 +7,6 @@ sudo pacman -Sy --noconfirm --needed \
 
  echo -e "\nInstalling applications from AUR..."
  yay -S --noconfirm --needed \
-    grimshot \
     vscodium-bin \
     librewolf-bin \
     localsend-bin
