@@ -17,7 +17,9 @@ sudo pacman -Sy --noconfirm --needed \
     xorg-xwayland \
     xdg-desktop-portal-gtk \
     greetd \
-    greetd-regreet
+    greetd-regreet \
+    networkmanager \
+    wireplumber
 
 echo -e "\nInstalling desktop packages from AUR..."
 yay -S --noconfirm --needed \
@@ -37,3 +39,7 @@ systemctl enable greetd.service
 # Change boot target to GUI mode
 echo -e "\nSetting default target to graphical..."
 sudo systemctl set-default graphical.target
+
+# Enable Network Manager
+echo -e "\nEnabling Network Manager..."
+sudo systemctl enable NetworkManager

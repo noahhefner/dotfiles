@@ -1,11 +1,11 @@
 [{
     "layer": "top",
     "position": "top",
-    "spacing": 0,
+    "spacing": 32,
     
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["network"],
+    "modules-right": ["wireplumber", "network"],
        
     "clock": {
         "format": "{:%I:%M %p  %A, %B %d}",
@@ -28,5 +28,10 @@
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected",
         "on-click": "kitty nmtui"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": ["", "", ""]
     }
 }]
