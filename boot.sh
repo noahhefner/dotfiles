@@ -16,4 +16,4 @@ rm -rf $HOME/.local/share/dotfiles/
 git clone "https://github.com/noahhefner/dotfiles.git" $HOME/.local/share/dotfiles >/dev/null
 
 # Run the install script
-source ./install.sh
+source $HOME/.local/share/dotfiles/install.sh
