@@ -5,7 +5,7 @@ Configuration files for Linux programs. Many configurations are distribution-agn
 # Setup
 
 ```sh
-curl -s https://raw.githubusercontent.com/noahhefner/dotfiles/refs/heads/main/install.sh | bash
+curl -s https://raw.githubusercontent.com/noahhefner/dotfiles/refs/heads/main/boot.sh | bash
 ```
 
 # Fonts
