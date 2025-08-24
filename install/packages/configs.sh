@@ -17,3 +17,7 @@ cp -R $DOTFILES_CONFIGS/kitty $HOME/.config/
 echo -e "\nCopying bash configuration files..."
 cp $DOTFILES_CONFIGS/bash/.bashrc $HOME/
 cp $DOTFILES_CONFIGS/bash/.bash_aliases $HOME/
+
+echo -e "\nDownloading AstroNvim config for Neovim..."
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
