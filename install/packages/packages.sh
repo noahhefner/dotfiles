@@ -23,7 +23,8 @@ sudo pacman -Sy --noconfirm --needed \
     wireplumber \
     ttf-cascadia-code-nerd \
     flatpak \
-    nano
+    nano \
+    neovim
 
 echo -e "\nInstalling packages with yay..."
  yay -S --noconfirm --needed \
