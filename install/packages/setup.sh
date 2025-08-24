@@ -1,29 +1,5 @@
 #!/bin/bash
 
-echo -e "\nInstalling desktop packages..."
-sudo pacman -Sy --noconfirm --needed \
-    sway \
-    swaybg \
-    swaylock \
-    swayidle \
-    waybar \
-    kitty \
-    qt5-wayland \
-    qt6-wayland \
-    gammastep \
-    brightnessctl \
-    xdg-utils \
-    xorg-xwayland \
-    xdg-desktop-portal-gtk \
-    greetd \
-    greetd-regreet \
-    networkmanager \
-    wireplumber
-
-echo -e "\nInstalling desktop packages from AUR..."
-yay -S --noconfirm --needed \
-    fuzzel
-
 DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
 
 # Copy greetd configuration files

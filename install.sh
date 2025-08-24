@@ -12,9 +12,6 @@ source $DOTFILES_INSTALL/preflight/aur.sh
 source $DOTFILES_INSTALL/system_config/timezones.sh
 
 # Desktop
-source $DOTFILES_INSTALL/desktop/desktop.sh
-source $DOTFILES_INSTALL/desktop/fonts.sh
-source $DOTFILES_INSTALL/desktop/applications.sh
-
-# Application Configuration Files
-source $DOTFILES_INSTALL/app_config/config.sh
+source $DOTFILES_INSTALL/packages/packages.sh
+source $DOTFILES_INSTALL/packages/setup.sh
+source $DOTFILES_INSTALL/packages/configs.sh
