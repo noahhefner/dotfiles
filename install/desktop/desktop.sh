@@ -10,7 +10,6 @@ sudo pacman -Sy --noconfirm --needed \
     kitty \
     qt5-wayland \
     qt6-wayland \
-    mako \
     gammastep \
     brightnessctl \
     xdg-utils \
