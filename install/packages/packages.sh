@@ -22,7 +22,8 @@ sudo pacman -Sy --noconfirm --needed \
     networkmanager \
     wireplumber \
     ttf-cascadia-code-nerd \
-    flatpak
+    flatpak \
+    nano
 
 echo -e "\nInstalling packages with yay..."
  yay -S --noconfirm --needed \
