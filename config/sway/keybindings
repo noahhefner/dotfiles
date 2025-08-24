@@ -124,7 +124,7 @@ bindsym XF86MonBrightnessDown exec 'brightnessctl s 5%-'
 bindsym XF86MonBrightnessUp exec 'brightnessctl s +5%'
 
 # Asjust volume
-bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
+bindsym XF86AudioRaiseVolume exec wpctl set-volume --limit 1.0 @DEFAULT_SINK@ 5%+
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ 5%-
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
 
