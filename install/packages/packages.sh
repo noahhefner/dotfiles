@@ -39,7 +39,8 @@ sudo pacman -Sy --noconfirm --needed \
     tmux \
     nautilus \
     gnome-calculator \
-    nodejs
+    nodejs \
+    nwg-displays
 
 echo -e "\nInstalling packages with yay..."
  yay -S --noconfirm --needed \
