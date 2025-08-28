@@ -25,11 +25,26 @@ sudo pacman -Sy --noconfirm --needed \
     flatpak \
     nano \
     neovim \
-    openssh
+    openssh \
+    libreoffice-still \
+    unzip \
+    base-devel \
+    man-db \
+    tree \
+    go \
+    docker \
+    docker-buildx \
+    docker-compose \
+    ripgrep \
+    tmux \
+    nautilus \
+    gnome-calculator \
+    nodejs
 
 echo -e "\nInstalling packages with yay..."
  yay -S --noconfirm --needed \
     vscodium-bin \
     librewolf-bin \
+    ungoogled-chromium-bin \
     localsend-bin \
     fuzzel

@@ -3,103 +3,13 @@
     "explorer.confirmDragAndDrop": false,
     "editor.fontSize": 16,
     "markdown.preview.fontSize": 16,
-    "zowe.ds.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "fileHistory": [],
-        "searchHistory": []
-    },
-    "zowe.uss.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "fileHistory": [],
-        "searchHistory": [],
-        "templates": []
-    },
-    "zowe.jobs.history": {
-        "persistence": true,
-        "favorites": [],
-        "history": [],
-        "sessions": [],
-        "fileHistory": [],
-        "searchHistory": [],
-        "templates": []
-    },
-    "files.associations": {
-        "*.COBOL*": "cobol",
-        "*.COB*": "cobol",
-        "*.COBCOPY*": "cobol",
-        "*.COPYBOOK*": "cobol",
-        "*.COPY*": "cobol",
-        "*.PL1*": "pl1",
-        "*.PLI*": "pl1",
-        "*.INC*": "pl1",
-        "*.INCLUDE*": "pl1",
-        "*.JCL*": "jcl",
-        "*.ASM*": "hlasm",
-        "*.ASSEMBLE*": "hlasm",
-        "*.HLASM*": "hlasm",
-        "*.HLA*": "hlasm",
-        "*.MACLIB*": "hlasm",
-        "*.EXEC*": "rexx",
-        "*.REXX*": "rexx",
-        "*.REXXINC*": "rexx",
-        "*.rex": "rexx",
-        "*.rexx": "rexx",
-        "*.copyasm": "hlasm",
-        "*.macasm": "hlasm",
-        "*.bms": "hlasm"
-    },
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "/zapp.json"
-            ],
-            "url": "file:///c%3A/Users/93004345/.vscode-oss/extensions/ibm.zopeneditor-3.3.3-universal/resources/zapp-schema-1.0.0.json"
-        },
-        {
-            "fileMatch": [
-                "/zcodeformat.json"
-            ],
-            "url": "file:///c%3A/Users/93004345/.vscode-oss/extensions/ibm.zopeneditor-3.3.3-universal/resources/zcodeformat-schema-0.0.1.json"
-        }
-    ],
     "workbench.statusBar.visible": false,
-    "workbench.colorTheme": "Everforest Dark",
     "editor.rulers": [
-        80,120
+        80
     ],
     "explorer.confirmDelete": false,
     "html.format.wrapLineLength": 80,
-    "interactiveSession.editor.wordWrap": "on",
-    "notebook.output.wordWrap": true,
-    "diffEditor.wordWrap": "on",
-    "security.workspace.trust.untrustedFiles": "open",
-    "redhat.telemetry.enabled": false,
-    "vscode-pets.petColor": "green",
-    "vscode-pets.petSize": "medium",
-    "vscode-pets.position": "explorer",
-    "vscode-pets.theme": "forest",
-    "vscode-pets.petType": "rubber-duck",
-    "window.zoomLevel": 1,
-    "editor.defaultFormatter": "redhat.java",
-    "debug.console.wordWrap": false,
     "editor.inlayHints.enabled": "off",
-    "git.openRepositoryInParentFolders": "never",
-    "files.exclude": {
-        "**/.DS_Store": false,
-        "**/.git": false,
-        "**/.hg": false,
-        "**/.svn": false,
-        "**/CVS": false,
-        "**/Thumbs.db": false
-    },
-    "zowe.settings.version": 2,
-    "zopeneditor.welcomePage.show": false,
     "workbench.iconTheme": "material-icon-theme",
     "editor.quickSuggestions": {
         "other": "off"
@@ -136,18 +46,6 @@
     "editor.suggest.showInterfaces": false,
     "editor.suggest.showIssues": false,
     "editor.suggest.showKeywords": false,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "editor.stickyScroll.enabled": false,
     "editor.accessibilitySupport": "off",
     "breadcrumbs.enabled": false,
@@ -155,12 +53,9 @@
     "editor.minimap.enabled": false,
     "editor.hover.enabled": false,
     "workbench.sideBar.location": "right",
-    "everforest.darkWorkbench": "flat",
-    "everforest.darkContrast": "hard",
-    "prettier.endOfLine": "crlf",
-    "files.eol": "\r\n",
+    "files.eol": "\n",
     "update.showReleaseNotes": false,
-    "editor.fontFamily": "Hack Nerd Font Mono, 'Courier New', monospace",
+    "editor.fontFamily": "CaskaydiaCove Nerd Font, 'Courier New', monospace",
     "workbench.editor.enablePreview": false,
     "workbench.editor.wrapTabs": true,
     "explorer.compactFolders": false,
