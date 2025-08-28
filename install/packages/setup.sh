@@ -1,11 +1,13 @@
 #!/bin/bash
 
-DOTFILES_CONFIG=$HOME/.local/share/dotfiles/config
+
+DOTFILES=$HOME/.local/share/dotfiles
 
 # Copy greetd configuration files
 echo -e "\nCopying greetd configuration files..."
-sudo cp $DOTFILES_CONFIG/greetd/config.toml /etc/greetd/config.toml
-sudo cp $DOTFILES_CONFIG/greetd/sway-config /etc/greetd/sway-config
+sudo cp $DOTFILES/config/greetd/config.toml /etc/greetd/config.toml
+sudo cp $DOTFILES/config/greetd/sway-config /etc/greetd/sway-config
+sudo cp $DOTFILES/wallpapers/arch.png /usr/share/backgrounds/arch.png
 
 # Enable greetd service
 echo -e "\nEnabling greetd service..."
