@@ -24,7 +24,8 @@ sudo pacman -Sy --noconfirm --needed \
     ttf-cascadia-code-nerd \
     flatpak \
     nano \
-    neovim
+    neovim \
+    openssh
 
 echo -e "\nInstalling packages with yay..."
  yay -S --noconfirm --needed \
