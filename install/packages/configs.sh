@@ -5,6 +5,9 @@ DOTFILES_CONFIGS=$HOME/.local/share/dotfiles/config
 echo -e "\nCopying sway configuration files..."
 cp -R $DOTFILES_CONFIGS/sway $HOME/.config/
 
+echo -e "\nCopying swaynag configuration files..."
+cp -R $DOTFILES_CONFIGS/swaynag $HOME/.config/
+
 echo -e "\nCopying waybar configuration files..."
 cp -R $DOTFILES_CONFIGS/waybar $HOME/.config/
 

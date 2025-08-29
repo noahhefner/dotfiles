@@ -28,6 +28,6 @@ window#waybar {
     box-shadow: inset 0px -2px white;
 }
 
-#network {
-    margin-right: 8px;
+#custom-power {
+    margin-right: 18px;
 }
