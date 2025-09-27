@@ -40,6 +40,7 @@ sudo pacman -Sy --noconfirm --needed \
     nautilus \
     gnome-calculator \
     nodejs \
+    npm \
     nwg-displays
 
 echo -e "\nInstalling packages with yay..."
