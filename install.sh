@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Install Arch packages
-mapfile -t packages < <(grep -v '^#' "$OMARCHY_INSTALL/omarchy-base.packages" | grep -v '^$')
+mapfile -t packages < <(grep -v '^#' "./packages.arch.txt" | grep -v '^$')
 sudo pacman -S --noconfirm --needed "${packages[@]}"
 
-# Install Flatpaks
-xargs flatpak install flathub -y < ./flatpaks.txt
+# Install AUR packages
+mapfile -t packages < <(grep -v '^#' "./packages.aur.txt" | grep -v '^$')
+sudo yay -S --noconfirm --needed "${packages[@]}"
