@@ -1,0 +1,4 @@
+vscodium-bin
+librewolf-bin
+ungoogled-chromium-bin
+localsend-bin
