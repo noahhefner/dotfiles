@@ -1,17 +1,8 @@
 #!/bin/bash
 
-# Exit immediately if a command exits with a non-zero status
-set -e
+# Install Arch packages
+mapfile -t packages < <(grep -v '^#' "$OMARCHY_INSTALL/omarchy-base.packages" | grep -v '^$')
+sudo pacman -S --noconfirm --needed "${packages[@]}"
 
-DOTFILES_INSTALL=$HOME/.local/share/dotfiles/install
-
-# Prerequisites
-source $DOTFILES_INSTALL/preflight/aur.sh
-
-# System configuration
-source $DOTFILES_INSTALL/system_config/timezones.sh
-
-# Desktop
-source $DOTFILES_INSTALL/packages/packages.sh
-source $DOTFILES_INSTALL/packages/setup.sh
-source $DOTFILES_INSTALL/packages/configs.sh
+# Install Flatpaks
+xargs flatpak install flathub -y < ./flatpaks.txt

@@ -1,7 +1,0 @@
-com.spotify.Client
-com.yubico.yubioath
-org.gnome.Calculator
-org.musicbrainz.Picard
-de.haeckerfelix.Fragments
-com.github.tchx84.Flatseal
-ca.littlesvr.asunder
