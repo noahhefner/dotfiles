@@ -23,7 +23,7 @@ cp ./config/waybar/style.css $HOME/.config/waybar/
 
 # hyprland
 mkdir -p $HOME/.config/hypr/
-cp ./config/hyprland/hyprland.conf $HOME/.config/hypr/
+cp ./config/hypr/hyprland.conf $HOME/.config/hypr/
 
 # waypaper
 mkdir -p $HOME/.config/waypaper/
