@@ -30,7 +30,6 @@ hyprland-qt-support
 hyprland-qtutils
 hyprlauncher
 hyprlock
-hyprpaper
 hyprpolkitagent
 hyprsunset
 imagemagick
@@ -53,6 +52,7 @@ qt5-wayland
 qt6-wayland
 ripgrep
 signal-desktop
+swaybg
 system-config-printer
 tldr
 tmux
@@ -61,6 +61,7 @@ ttf-cascadia-code-nerd
 unzip
 vlc
 waybar
+waypaper
 whois
 wireplumber
 wl-clipboard

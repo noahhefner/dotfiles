@@ -25,6 +25,6 @@ cp ./config/waybar/style.css $HOME/.config/waybar/
 mkdir -p $HOME/.config/hypr/
 cp ./config/hyprland/hyprland.conf $HOME/.config/hypr/
 
-# hyprpaper
-mkdir -p $HOME/.config/hyprpaper/
-cp ./config/hyprpaper/hyprpaper.conf $HOME/.config/hyprpaper/
+# waypaper
+mkdir -p $HOME/.config/waypaper/
+cp ./config/waypaper/config.ini $HOME/.config/waypaper/
