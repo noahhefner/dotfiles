@@ -13,4 +13,5 @@ cp ./config/bash/.bashrc $HOME/
 cp ./config/bash/.bash_aliases $HOME/
 
 # fuzzel
+mkdir -p $HOME/.config/fuzzel/
 cp ./config/fuzzel/fuzzel.ini $HOME/.config/fuzzel/
