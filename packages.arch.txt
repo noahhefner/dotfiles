@@ -29,9 +29,7 @@ hyprlauncher
 hyprlock
 hyprpaper
 hyprpolkitagent
-hyprqt6engine
 hyprsunset
-hyprsysteminfo
 imagemagick
 kitty
 less
