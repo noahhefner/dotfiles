@@ -20,3 +20,11 @@ cp ./config/fuzzel/fuzzel.ini $HOME/.config/fuzzel/
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
 cp ./config/waybar/style.css $HOME/.config/waybar/
+
+# hyprland
+mkdir -p $HOME/.config/hypr/
+cp ./config/hyprland/hyprland.conf $HOME/.config/hypr/
+
+# hyprpaper
+mkdir -p $HOME/.config/hyprpaper/
+cp ./config/hyprpaper/hyprpaper.conf $HOME/.config/hyprpaper/
