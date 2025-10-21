@@ -15,3 +15,8 @@ cp ./config/bash/.bash_aliases $HOME/
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
 cp ./config/fuzzel/fuzzel.ini $HOME/.config/fuzzel/
+
+# waybar
+mkdir -p $HOME/.config/waybar/
+cp ./config/waybar/config.jsonc $HOME/.config/waybar/
+cp ./config/waybar/style.css $HOME/.config/waybar/
