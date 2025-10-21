@@ -6,4 +6,4 @@ sudo pacman -S --noconfirm --needed "${packages[@]}"
 
 # Install AUR packages
 mapfile -t packages < <(grep -v '^#' "./packages.aur.txt" | grep -v '^$')
-sudo yay -S --noconfirm --needed "${packages[@]}"
+yay -S --noconfirm --needed "${packages[@]}"

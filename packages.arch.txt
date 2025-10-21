@@ -15,6 +15,7 @@ flatpak
 fontconfig
 fzf
 gammastep
+ghostty
 gnome-calculator
 gnome-calculator
 gnome-disk-utility
@@ -31,7 +32,6 @@ hyprpaper
 hyprpolkitagent
 hyprsunset
 imagemagick
-kitty
 less
 libreoffice-still
 libsecret
@@ -66,4 +66,3 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
 xorg-xwayland
-yaru-icon-theme
