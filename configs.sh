@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # wallpapers
-sudo cp -R ./wallpapers/* /usr/share/backgrounds/*
+sudo cp -R ./wallpapers/* /usr/share/backgrounds/
 
 # greetd + regreet configs
 sudo cp ./config/greetd/config.toml /etc/greetd/config.toml
