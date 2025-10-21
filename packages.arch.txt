@@ -13,6 +13,7 @@ evince
 fastfetch
 flatpak
 fontconfig
+fuzzel
 fzf
 gammastep
 ghostty
@@ -24,6 +25,7 @@ go
 greetd
 greetd-regreet
 hypridle
+hyprland
 hyprland-qt-support
 hyprland-qtutils
 hyprlauncher

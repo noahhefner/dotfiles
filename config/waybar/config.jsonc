@@ -3,9 +3,9 @@
     "position": "top",
     "spacing": 32,
     
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "network", "custom/power"],
+    "modules-right": ["wireplumber", "network"],
        
     "clock": {
         "format": "{:%I:%M %p  %A, %B %d}",
@@ -33,9 +33,5 @@
         "format": "{volume}% {icon}",
         "format-muted": "",
         "format-icons": ["", "", ""]
-    },
-    "custom/power": {
-        "on-click": "swaynag -B \"Shutdown\" poweroff -B \"Reboot\" reboot --type power --message \"Power Options\"",
-        "format": "⏻"
     }
 }]
