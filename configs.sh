@@ -9,7 +9,8 @@ sudo cp ./config/greetd/hyprland-config /etc/greetd/hyprland-config
 sudo cp ./config/greetd/regreet.toml /etc/greetd/regreet.toml
 
 # bash
-cp ./config/bash/* $HOME/
+cp ./config/bash/.bashrc $HOME/
+cp ./config/bash/.bash_aliases $HOME/
 
 # fuzzel
-cp ./config/fuzzel/* $HOME/.config/fuzzel
+cp ./config/fuzzel/fuzzel.ini $HOME/.config/fuzzel/
