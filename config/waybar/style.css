@@ -24,7 +24,7 @@ window#waybar {
     margin: 0 6px;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     box-shadow: inset 0px -2px white;
 }
 

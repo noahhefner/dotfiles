@@ -36,6 +36,7 @@ imagemagick
 less
 libreoffice-still
 libsecret
+mako
 man-db
 nano
 nautilus
