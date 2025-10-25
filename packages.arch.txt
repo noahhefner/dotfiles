@@ -168,9 +168,6 @@ vlc
 # Desktop status bar
 waybar
 
-# Destop wallpaper GUI
-waypaper
-
 # Domain / IP lookup utility
 whois
 
