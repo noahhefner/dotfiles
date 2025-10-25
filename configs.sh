@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# load environment variables from .env
+set -a
+source .env
+set +a
+
 # wallpapers
 sudo cp -R ./wallpapers/* /usr/share/backgrounds/
 
@@ -23,7 +28,7 @@ envsubst < ./config/waybar/style.css > $HOME/.config/waybar/style.css
 
 # hyprland
 mkdir -p $HOME/.config/hypr/
-envsubst < ./config/hypr/hyprland.conf > $HOME/.config/hypr/hyprland.conf
+envsubst < ./config/hypr/hyprland.conf > $HOME/.config/hypr/hyprland.conf2
 
 # waypaper
 mkdir -p $HOME/.config/waypaper/
