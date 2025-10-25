@@ -6,6 +6,7 @@ source .env
 set +a
 
 # wallpapers
+sudo mkdir -p /usr/share/backgrounds/
 sudo cp -R ./wallpapers/* /usr/share/backgrounds/
 
 # bash
