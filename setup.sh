@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Update
+sudo pacman -Syu
 
 # Install yay dependencies
 sudo pacman -Sy --needed --noconfirm git base-devel

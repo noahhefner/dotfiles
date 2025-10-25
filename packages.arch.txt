@@ -125,6 +125,9 @@ picard
 # Media Player controls
 playerctl
 
+# Python
+python
+
 # Python bindings for GLib/GObject/GIO/GTK
 python-gobject
 
@@ -158,6 +161,9 @@ ttf-cascadia-code-nerd
 
 # Compression utility
 unzip
+
+# Python package manager
+uv
 
 # Universal Wayland Session Manager
 uwsm

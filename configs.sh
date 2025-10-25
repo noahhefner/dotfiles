@@ -1,13 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# load environment variables from .env
-set -a
-source .env
-set +a
-
-# wallpapers
-sudo mkdir -p /usr/share/backgrounds/
-sudo cp -R ./wallpapers/* /usr/share/backgrounds/
+# setup templater
+cd templater
+uv sync
+cd ..
 
 # bash
 cp ./config/bash/.bashrc $HOME/
@@ -15,22 +11,26 @@ cp ./config/bash/.bash_aliases $HOME/
 
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
-envsubst < ./config/fuzzel/fuzzel.ini > $HOME/.config/fuzzel/fuzzel.ini
+./templater/.venv/bin/python ./templater/templater.py -t ./config/fuzzel/fuzzel.jinja.ini -e .env -o $HOME/.config/fuzzel/fuzzel.ini
 
 # greetd + regreet configs
 sudo cp ./config/greetd/config.toml /etc/greetd/config.toml
 sudo cp ./config/greetd/hyprland-config /etc/greetd/hyprland-config
 sudo cp ./config/greetd/regreet.toml /etc/greetd/regreet.toml
 
+# hyprland
+mkdir -p $HOME/.config/hypr/
+./templater/.venv/bin/python ./templater/templater.py -t ./config/hypr/hyprland.jinja.conf -e .env -o $HOME/.config/hypr/hyprland.conf
+
 # waybar
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
-envsubst < ./config/waybar/style.css > $HOME/.config/waybar/style.css
-
-# hyprland
-mkdir -p $HOME/.config/hypr/
-envsubst < ./config/hypr/hyprland.conf > $HOME/.config/hypr/hyprland.conf
+./templater/.venv/bin/python ./templater/templater.py -t ./config/waybar/style.jinja.css -e .env -o $HOME/.config/waybar/style.css
 
 # waypaper
 mkdir -p $HOME/.config/waypaper/
 cp ./config/waypaper/config.ini $HOME/.config/waypaper/
+
+# wallpapers
+sudo mkdir -p /usr/share/backgrounds/
+sudo cp -R ./wallpapers/* /usr/share/backgrounds/

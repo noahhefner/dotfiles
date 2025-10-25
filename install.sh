@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install Arch packages
 mapfile -t packages < <(grep -v '^#' "./packages.arch.txt" | grep -v '^$')
