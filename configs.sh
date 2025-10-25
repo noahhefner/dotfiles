@@ -28,7 +28,7 @@ envsubst < ./config/waybar/style.css > $HOME/.config/waybar/style.css
 
 # hyprland
 mkdir -p $HOME/.config/hypr/
-envsubst < ./config/hypr/hyprland.conf > $HOME/.config/hypr/hyprland.conf2
+envsubst < ./config/hypr/hyprland.conf > $HOME/.config/hypr/hyprland.conf
 
 # waypaper
 mkdir -p $HOME/.config/waypaper/
