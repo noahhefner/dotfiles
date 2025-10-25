@@ -1,38 +1,77 @@
-[{
+[
+  {
     "layer": "top",
     "position": "top",
     "spacing": 32,
-    
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "network"],
-       
+    "modules-left": [
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "bluetooth",
+      "wireplumber",
+      "network",
+      "battery"
+    ],
     "clock": {
-        "format": "{:%I:%M %p  %A, %B %d}",
-        "timezone": "America/New_York",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "calendar": {
-          "mode": "month",
-          "on-scroll": 1,
-          "format": {
-            "months": "<span color='#ffffff'><b>{}</b></span>",
-            "days": "<span color='#ffffff'><b>{}</b></span>",
-            "today": "<span color='#ffffff'><b>{}</b></span>"
-          }
+      "format": "{:%I:%M %p  %A, %B %d}",
+      "timezone": "America/New_York",
+      "tooltip-format": "<tt><big>{calendar}</big></tt>",
+      "calendar": {
+        "mode": "month",
+        "on-scroll": 1,
+        "format": {
+          "months": "<span color='#ffffff'><b>{}</b></span>",
+          "days": "<span color='#ffffff'><b>{}</b></span>",
+          "today": "<span color='#ffffff'><b>{}</b></span>"
         }
+      }
     },
-    "network": {
-        "format-wifi": "{essid} {signalStrength}%  ",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "Disconnected",
-        "on-click": "dotfiles-launch-impala"
+    "bluetooth": {
+      "format": "",
+      "format-disabled": "󰂲",
+      "format-connected": "",
+      "tooltip-format": "Devices connected: {num_connections}",
+      "on-click": "blueberry"
     },
     "wireplumber": {
-        "format": "{volume}% {icon}",
-        "format-muted": "",
-        "format-icons": ["", "", ""],
-        "on-click": "dotfiles-launch-wiremix"
+      "format": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
+      "on-click": "dotfiles-launch-wiremix"
+    },
+    "network": {
+      "format-wifi": "{essid} {signalStrength}%  ",
+      "format-ethernet": "{ipaddr}/{cidr}",
+      "tooltip-format": "{ifname} via {gwaddr}",
+      "format-linked": "{ifname} (No IP)",
+      "format-disconnected": "Disconnected",
+      "on-click": "dotfiles-launch-impala"
+    },
+      "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "on-click": "omarchy-menu power",
+    "states": {
+      "warning": 20,
+      "critical": 10
     }
-}]
+  }
+  }
+]

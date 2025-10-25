@@ -5,7 +5,9 @@ cd templater
 uv sync
 cd ..
 
-# bash
+# oh-my-bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
+
 cp ./config/bash/.bashrc $HOME/
 cp ./config/bash/.bash_aliases $HOME/
 
@@ -16,7 +18,7 @@ mkdir -p $HOME/.config/fuzzel/
 # greetd + regreet configs
 sudo cp ./config/greetd/config.toml /etc/greetd/config.toml
 sudo cp ./config/greetd/hyprland-config /etc/greetd/hyprland-config
-sudo cp ./config/greetd/regreet.toml /etc/greetd/regreet.toml
+./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/regreet.jinja.toml -e .env -o /etc/greetd/regreet.toml
 
 # hyprland
 mkdir -p $HOME/.config/hypr/
