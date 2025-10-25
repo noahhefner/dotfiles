@@ -9,7 +9,7 @@ cp ./config/bash/.bash_aliases $HOME/
 
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
-cp ./config/fuzzel/fuzzel.ini $HOME/.config/fuzzel/
+envsubst < ./config/fuzzel/fuzzel.ini > $HOME/.config/fuzzel/fuzzel.ini
 
 # greetd + regreet configs
 sudo cp ./config/greetd/config.toml /etc/greetd/config.toml
@@ -19,7 +19,7 @@ sudo cp ./config/greetd/regreet.toml /etc/greetd/regreet.toml
 # waybar
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
-cp ./config/waybar/style.css $HOME/.config/waybar/
+envsubst < ./config/waybar/style.css > $HOME/.config/waybar/style.css
 
 # hyprland
 mkdir -p $HOME/.config/hypr/

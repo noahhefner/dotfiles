@@ -1,72 +1,192 @@
+# Rendezvous / Bonjour protocol implementation
 avahi
+
+# Build tools
 base-devel
+
+# Bluetooth
 blueberry
+
+# Control display brightness
 brightnessctl
+
+# Printing
 cups
 cups-browsed
 cups-filters
 cups-pdf
+
+# Docker
 docker
 docker-buildx
 docker-compose
+
+# Gnome document viewer
 evince
+
+# TUI system spec viewer
 fastfetch
+
+# Flatpak
 flatpak
+
+# Provides font information to apps
 fontconfig
+
+# App Launcher
 fuzzel
+
+# Fuzzy find
 fzf
+
+# Display color temperature
 gammastep
+
+# Terminal
 ghostty
-gnome-calculator
+
+# Gnome apps
 gnome-calculator
 gnome-disk-utility
-gnome-themes-extra
+
+# Golang
 go
+
+# Login manager
 greetd
 greetd-regreet
+
+# Hyprland screen idle
 hypridle
+
+# Hyprland desktop environment
 hyprland
-hyprland-qt-support
+
+# Hyprland utilities
 hyprland-qtutils
-hyprlauncher
+
+# Hyprland lock screen
 hyprlock
+
+# Allows GUI apps to request elevated privelages
 hyprpolkitagent
+
+# Blue light filter
 hyprsunset
+
+# Image utilities
 imagemagick
+
+# Wireless networking
+iwd
+
+# TUI file pager
 less
+
+# Office Suite
 libreoffice-still
+
+# Gnome package for storing secrets and passwords
 libsecret
+
+# Notifications
 mako
+
+# Man pages
 man-db
+
+# Text editor
 nano
+
+# File browser
 nautilus
+
+# Spotify TUI
 ncspot
+
+# Text editor
 neovim
+
+# Networking
 networkmanager
+
+# Node
 nodejs
+
+# GUI for managing displays
 nwg-displays
+
+# SSH utils
 openssh
+
+# Audio file metadata editor
 picard
+
+# Media Player controls
 playerctl
+
+# Python bindings for GLib/GObject/GIO/GTK
 python-gobject
+
+# QT libraries for Wayland
 qt5-wayland
 qt6-wayland
+
+# Search tool
 ripgrep
+
+# Signal client
 signal-desktop
+
+# Desktop background
 swaybg
+
+# GUI for cups (printing)
 system-config-printer
+
+# Command summarizer
 tldr
+
+# Terminal multiplexer
 tmux
+
+# List files in terminal
 tree
+
+# Nerd font
 ttf-cascadia-code-nerd
+
+# Compression utility
 unzip
+
+# Universal Wayland Session Manager
+uwsm
+
+# Media playback
 vlc
+
+# Desktop status bar
 waybar
+
+# Destop wallpaper GUI
 waypaper
+
+# Domain / IP lookup utility
 whois
+
+# TUI for managing audio settings
+wiremix
+
+# Session / policy manager for piepwire
 wireplumber
+
+# Wayland clipboard utilities 
 wl-clipboard
+
+# XDG packages
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
+
+# X server compatibility layer for Wayland
 xorg-xwayland

@@ -27,11 +27,12 @@
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected",
-        "on-click": "kitty nmtui"
+        "on-click": "dotfiles-launch-impala"
     },
     "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "on-click": "dotfiles-launch-wiremix"
     }
 }]
