@@ -24,6 +24,15 @@ Execute scripts:
 
 Restart.
 
+## Applications
+
+For a full list of installed packages, see `packages.arch.txt` and `packages.aur.txt`.
+
+| Name | Description |
+|------|-------------|
+| LibreWolf | Hardened Firefox |
+| Ungoogled Chromium | Chromium without Google spyware |
+
 ## Keybindings
 
 ### Hyprland
