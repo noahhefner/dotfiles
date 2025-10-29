@@ -8,8 +8,12 @@ sed -i "s/^OSH_THEME=\".*\"/OSH_THEME=\"powerline\"/" "$HOME/.bashrc"
 
 # enable avahi service
 sudo systemctl enable avahi-daemon
-sudo systemctl start avahi-daemon
 
 # enable greetd service
 sudo systemctl enable greetd
-sudo systemctl start greetd
+
+# enable docker service
+sudo systemctl enable docker
+
+# add user to docker group
+sudo usermod -aG docker $USER
