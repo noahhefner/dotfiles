@@ -28,6 +28,6 @@ window#waybar {
     box-shadow: inset 0px -2px white;
 }
 
-#custom-power {
-    margin-right: 18px;
+#bluetooth, #wireplumber, #network, #battery {
+    margin-right: 12px;
 }
