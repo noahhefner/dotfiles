@@ -8,9 +8,6 @@ cd ..
 # oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 
-cp ./config/bash/.bashrc $HOME/
-cp ./config/bash/.bash_aliases $HOME/
-
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/fuzzel/fuzzel.jinja.ini -e .env -o $HOME/.config/fuzzel/fuzzel.ini
@@ -18,7 +15,7 @@ mkdir -p $HOME/.config/fuzzel/
 # greetd + regreet configs
 sudo cp ./config/greetd/config.toml /etc/greetd/config.toml
 sudo cp ./config/greetd/hyprland-config /etc/greetd/hyprland-config
-./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/regreet.jinja.toml -e .env -o /etc/greetd/regreet.toml
+sudo ./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/regreet.jinja.toml -e .env -o /etc/greetd/regreet.toml
 
 # hyprland
 mkdir -p $HOME/.config/hypr/
