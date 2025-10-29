@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Save current working directory
+cwd=$(pwd)
+
 # Update
 sudo pacman -Syu
 
@@ -11,3 +14,6 @@ rm -rf $HOME/.local/share/yay
 git clone "https://aur.archlinux.org/yay.git" $HOME/.local/share/yay >/dev/null
 cd $HOME/.local/share/yay
 makepkg -si --noconfirm
+
+# Return to dotfiles directory
+cd $cwd
