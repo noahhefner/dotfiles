@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+exec setsid uwsm-app -- "$TERMINAL" --class=Impala -e impala "$@"

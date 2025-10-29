@@ -8,6 +8,14 @@ cd ..
 # oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 
+# AstroNvim
+git clone --depth 1 https://github.com/AstroNvim/template $HOME/.config/nvim
+rm -rf $HOME/.config/nvim/.git
+
+# uwsm
+mkdir -p $HOME/.config/uwsm
+cp ./config/uwsm/env $HOME/.config/uwsm
+
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/fuzzel/fuzzel.jinja.ini -e .env -o $HOME/.config/fuzzel/fuzzel.ini
