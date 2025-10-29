@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec setsid uwsm-app -- "$TERMINAL" --class=Wiremix -e wiremix "$@"
