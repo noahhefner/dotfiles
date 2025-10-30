@@ -29,6 +29,10 @@ sudo ./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/re
 mkdir -p $HOME/.config/hypr/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/hypr/hyprland.jinja.conf -e .env -o $HOME/.config/hypr/hyprland.conf
 
+# mako
+mkdir -p $HOME/.config/mako
+./templater/.venv/bin/python ./templater/templater.py -t ./config/mako/config.jinja -e .env -o $HOME/.config/mako/config
+
 # waybar
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
