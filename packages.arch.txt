@@ -46,6 +46,7 @@ gammastep
 ghostty
 
 # Gnome apps
+gnome-boxes
 gnome-calculator
 gnome-disk-utility
 
