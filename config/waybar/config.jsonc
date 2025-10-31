@@ -13,7 +13,8 @@
       "bluetooth",
       "wireplumber",
       "network",
-      "battery"
+      "battery",
+      "custom/power"
     ],
     "clock": {
       "format": "{:%I:%M %p  %A, %B %d}",
@@ -93,6 +94,11 @@
         "warning": 20,
         "critical": 10
       }
+    },
+    "custom/power": {
+        "on-click": "dotfiles-launch-powermenu",
+        "format": "⏻",
+        "tooltip-format": "Power Options"
     }
   }
 ]

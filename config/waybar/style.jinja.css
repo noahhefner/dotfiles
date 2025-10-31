@@ -1,6 +1,6 @@
 * {
     font-family: "{{ FONT }}", Roboto, Helvetica;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     min-height: 0;
 }
@@ -29,5 +29,9 @@ window#waybar {
 }
 
 #bluetooth, #wireplumber, #network, #battery {
-    margin-right: 12px;
+    margin-right: 8px;
+}
+
+#custom-power {
+  margin-right: 16px;
 }
