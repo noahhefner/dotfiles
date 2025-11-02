@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
 entries="Logout\nSuspend\nReboot\nShutdown"
-selected=$(echo -e $entries|fuzzel --minimal-lines 0 --dmenu --cache /dev/null | awk '{print tolower($2)}')
+selected=$(echo -e $entries|fuzzel --minimal-lines 0 --dmenu --cache /dev/null)
+
+echo $selected
 
 case $selected in
-  logout)
+  Logout)
     hyprctl dispatch exit;;
-  suspend)
+  Suspend)
     exec systemctl suspend;;
-  reboot)
+  Reboot)
     exec systemctl reboot;;
-  shutdown)
+  Shutdown)
     exec systemctl poweroff;;
 esac
