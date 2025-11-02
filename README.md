@@ -68,4 +68,6 @@ Graphics drivers are not included in the package list. See the following pages f
 
 ### Surface Book 2
 
-During the Arch installation process, be sure to install the [linux-firmware-marvell](https://archlinux.org/packages/core/any/linux-firmware-marvell/) package before first boot. This package is needed for the wifi card in the Surface Book 2 to work.
+During the Arch installation process, be sure to install [linux-firmware-marvell](https://archlinux.org/packages/core/any/linux-firmware-marvell/) as an additional package. This package is needed for the Marvell WiFi card.
+
+Additionally, install the [linux-surface](https://github.com/linux-surface/linux-surface) kernel.
