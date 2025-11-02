@@ -24,38 +24,42 @@ Execute scripts:
 
 Restart.
 
-## Applications
+## Packages
 
 For a full list of installed packages, see `packages.arch.txt` and `packages.aur.txt`.
 
-| Name | Description |
-|------|-------------|
-| LibreWolf | Hardened Firefox |
-| Ungoogled Chromium | Chromium without Google spyware |
+### Applications
 
-## Keybindings
+- [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
+- [Evince](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
+- [Ghostty](https://ghostty.org/): Terminal emulator
+- [Gnome Boxes](https://archlinux.org/packages/extra/x86_64/gnome-boxes/): Virtual Machines
+- [Gnome Calculator](https://archlinux.org/packages/extra/x86_64/gnome-calculator/): Calculator
+- [Gnome Disk Utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/): Disk analyzer
+- [Impala](https://archlinux.org/packages/extra/x86_64/impala/): TUI for WiFi management
+- LibreOffice: Office suite
+- LibreWolf: Firefox without Mozilla spyware
+- Localsend: Airdrop alternative
+- mako: Notifications
+- nano: Text editor
+- Nautilus: File manager
+- ncspot: TUI for Spotify
+- Neovim: Text Editor
+- nwg-displays: Display manager
+- Picard: Audio file metadata editor
+- Signal: Signal client
+- Ungoogled Chromium: Chromium without Google spyware
+- VLC: Media player
+- VSCodium: VSCode without Miscroft spyware
+- wiremix: TUI for audio settings
 
-### Hyprland
+### Developer Tools
 
-**`mod` = super**
-
-| Action | Keybinding |
-|--------|------------|
-| Start Terminal | `mod+enter` |
-| Start Launcher | `mod+d` |
-| Kill Focused Window | `mod+q` |
-| Change Focused Window | `mod+Up\|Down\|Left\|Right` |
-| Move Focused Window | `mod+Shift+Up\|Down\|Left\|Right` |
-
-### Ghostty
-
-| Action                        | Keybinding          |
-|-------------------------------|---------------------|
-| New Tab                       | `ctrl+shift+t`      |
-
-### Neovim
-
-See [AstroNvim mappings](https://docs.astronvim.com/mappings).
+- Docker
+- Go
+- Node
+- Python
+- uv
 
 ## Installation Notes
 
