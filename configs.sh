@@ -12,6 +12,10 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 git clone --depth 1 https://github.com/AstroNvim/template $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
 
+# Ghostty
+mkdir -p $HOME/.config/ghostty
+./templater/.venv/bin/python ./templater/templater.py -t ./config/ghostty/config.jinja -e .env -o $HOME/.config/ghostty/config
+
 # uwsm
 mkdir -p $HOME/.config/uwsm
 cp ./config/uwsm/env $HOME/.config/uwsm
