@@ -1,19 +1,19 @@
-# The default flameshot installation does not launch Flameshot in GUI mode. This is because
-# the default .desktop file does not include the `gui` option in the `Exec` field:
+# The default flameshot installation does not launch Flameshot in launcher mode. This is because
+# the default .desktop file does not include the `launcher` option in the `Exec` field:
 #
 # Exec=/usr/bin/flameshot
 #
-# This custom .desktop file for Flameshot adds the `gui` option to the `Exec` command, so
-# that Flameshot is started in GUI mode when launched from the app launcher (Fuzzel):
+# This custom .desktop file for Flameshot adds the `launcher` option to the `Exec` command, so
+# that Flameshot is started in launcher mode when launched from the app launcher (Fuzzel):
 #
-# Exec=/usr/bin/flameshot gui
+# Exec=/usr/bin/flameshot launcher
 
 [Desktop Entry]
 Name=Flameshot
 GenericName=Screenshot tool
 Comment=Powerful yet simple to use screenshot software.
 Keywords=flameshot;screenshot;capture;shutter;
-Exec=/usr/bin/flameshot gui
+Exec=/usr/bin/flameshot launcher
 Icon=org.flameshot.Flameshot
 Terminal=false
 Type=Application

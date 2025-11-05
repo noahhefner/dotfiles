@@ -2,6 +2,8 @@
 
 Configuration files, applications, and setup for my Linux desktop.
 
+![desktop screenshot](screenshot.png)
+
 ## Installation
 
 Execute scripts:
@@ -30,7 +32,7 @@ Reboot the machine, then run:
 
 ## Packages
 
-For a full list of installed packages, see `packages.arch.txt` and `packages.aur.txt`.
+For a full list of installed packages, see `packages.arch.txt`, `packages.aur.txt`, and `packages.flatpak.txt`.
 
 ### Applications
 
