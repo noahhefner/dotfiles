@@ -129,6 +129,8 @@ picard
 # Audio
 pipewire
 pipewire-audio
+pipewire-alsa
+pipewire-pulse
 
 # Media Player controls
 playerctl
