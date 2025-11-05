@@ -126,6 +126,10 @@ openssh
 # Audio file metadata editor
 picard
 
+# Audio
+pipewire
+pipewire-audio
+
 # Media Player controls
 playerctl
 
