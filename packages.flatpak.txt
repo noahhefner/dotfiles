@@ -1,3 +1,6 @@
+# Password manager
+com.bitwarden.desktop
+
 # Screenshot utility
 org.flameshot.Flameshot
 
@@ -6,3 +9,6 @@ com.github.neithern.g4music
 
 # GUI for Pipewire / audio
 com.saivert.pwvucontrol
+
+# Notes
+org.standardnotes.standardnotes

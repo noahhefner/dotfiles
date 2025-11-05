@@ -36,6 +36,7 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 
 ### Applications
 
+- [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop): Password manager
 - [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
 - [Document Viewier (Evince)](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
 - [Flameshot](https://flathub.org/en/apps/org.flameshot.Flameshot): Screenshot utility
@@ -54,6 +55,7 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - [MusicBrainz Picard](https://picard.musicbrainz.org/): Audio file metadata editor
 - [pwvucontrol](https://flathub.org/en/apps/com.saivert.pwvucontrol): Audio settings
 - [Signal](https://archlinux.org/packages/extra/x86_64/signal-desktop/): Signal client
+- [Standard Notes](https://flathub.org/en/apps/org.standardnotes.standardnotes): Note taking
 - [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium-archlinux): Chromium without Google spyware
 - [VLC](https://www.videolan.org/vlc/): Media player
 - [VSCodium](https://vscodium.com/d): VSCode without Miscroft spyware
