@@ -45,7 +45,7 @@
         "",
         ""
       ],
-      "on-click": "dotfiles-launch-wiremix"
+      "on-click": "dotfiles-launch-pwvucontrol"
     },
     "network": {
       "format-wifi": "{essid} {signalStrength}%  ",
@@ -53,7 +53,7 @@
       "tooltip-format": "{ifname} via {gwaddr}",
       "format-linked": "{ifname} (No IP)",
       "format-disconnected": "Disconnected",
-      "on-click": "dotfiles-launch-impala"
+      "on-click": "dotfiles-launch-nmtui"
     },
     "battery": {
       "format": "{capacity}% {icon}",

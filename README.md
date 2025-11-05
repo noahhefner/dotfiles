@@ -22,7 +22,11 @@ Execute scripts:
 . post-setup.sh
 ```
 
-Restart.
+Restart, then run:
+
+```sh
+. post-restart.sh
+```
 
 ## Packages
 
@@ -32,26 +36,24 @@ For a full list of installed packages, see `packages.arch.txt` and `packages.aur
 
 - [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
 - [Evince](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
+- Gapless: Music player
 - [Ghostty](https://ghostty.org/): Terminal emulator
 - [Gnome Boxes](https://archlinux.org/packages/extra/x86_64/gnome-boxes/): Virtual Machines
 - [Gnome Calculator](https://archlinux.org/packages/extra/x86_64/gnome-calculator/): Calculator
 - [Gnome Disk Utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/): Disk analyzer
-- [Impala](https://archlinux.org/packages/extra/x86_64/impala/): TUI for WiFi management
 - LibreOffice: Office suite
 - LibreWolf: Firefox without Mozilla spyware
 - Localsend: Airdrop alternative
 - mako: Notifications
-- nano: Text editor
 - Nautilus: File manager
-- ncspot: TUI for Spotify
 - Neovim: Text Editor
 - nwg-displays: Display manager
 - Picard: Audio file metadata editor
+- pwvucontrol: Audio settings
 - Signal: Signal client
 - Ungoogled Chromium: Chromium without Google spyware
 - VLC: Media player
 - VSCodium: VSCode without Miscroft spyware
-- wiremix: TUI for audio settings
 
 ### Developer Tools
 

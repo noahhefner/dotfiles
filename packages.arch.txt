@@ -78,9 +78,6 @@ hyprsunset
 # Image utilities
 imagemagick
 
-# WiFi TUI
-impala
-
 # Wireless networking
 iwd
 
@@ -104,9 +101,6 @@ nano
 
 # File browser
 nautilus
-
-# Spotify TUI
-ncspot
 
 # Text editor
 neovim
@@ -186,9 +180,6 @@ waybar
 
 # Domain / IP lookup utility
 whois
-
-# TUI for managing audio settings
-wiremix
 
 # Session / policy manager for piepwire
 wireplumber
