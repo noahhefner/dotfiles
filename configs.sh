@@ -12,6 +12,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 git clone --depth 1 https://github.com/AstroNvim/template $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
 
+# Flameshot
+mkdir -p $HOME/.config/flameshot
+cp ./config/flameshot/flameshot.ini $HOME/.config/flameshot/
+sudo cp ./config/flameshot/org.flameshot.Flameshot.desktop /usr/share/applications/
+
 # Ghostty
 mkdir -p $HOME/.config/ghostty
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/ghostty/config.jinja -e .env -o $HOME/.config/ghostty/config

@@ -57,6 +57,9 @@ go
 greetd
 greetd-regreet
 
+# Dependency for Flameshot
+grim
+
 # Hyprland screen idle
 hypridle
 

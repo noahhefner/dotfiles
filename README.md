@@ -22,10 +22,10 @@ Execute scripts:
 . post-setup.sh
 ```
 
-Restart, then run:
+Reboot the machine, then run:
 
 ```sh
-. post-restart.sh
+. post-reboot.sh
 ```
 
 ## Packages
@@ -35,25 +35,27 @@ For a full list of installed packages, see `packages.arch.txt` and `packages.aur
 ### Applications
 
 - [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
-- [Evince](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
-- Gapless: Music player
+- [Document Viewier (Evince)](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
+- [Flameshot](https://flathub.org/en/apps/org.flameshot.Flameshot): Screenshot utility
+- [Gapless](https://flathub.org/en/apps/com.github.neithern.g4music): Music player
 - [Ghostty](https://ghostty.org/): Terminal emulator
 - [Gnome Boxes](https://archlinux.org/packages/extra/x86_64/gnome-boxes/): Virtual Machines
 - [Gnome Calculator](https://archlinux.org/packages/extra/x86_64/gnome-calculator/): Calculator
 - [Gnome Disk Utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/): Disk analyzer
-- LibreOffice: Office suite
-- LibreWolf: Firefox without Mozilla spyware
-- Localsend: Airdrop alternative
-- mako: Notifications
-- Nautilus: File manager
-- Neovim: Text Editor
-- nwg-displays: Display manager
-- Picard: Audio file metadata editor
-- pwvucontrol: Audio settings
-- Signal: Signal client
-- Ungoogled Chromium: Chromium without Google spyware
-- VLC: Media player
-- VSCodium: VSCode without Miscroft spyware
+- [LibreOffice](https://www.libreoffice.org/): Office suite
+- [LibreWolf](https://librewolf.net/): Firefox without Mozilla spyware
+- [LocalSend](https://localsend.org/): Airdrop alternative
+- [mako](https://github.com/emersion/mako): Notifications
+- [Nautilus](https://apps.gnome.org/Nautilus/): File manager
+- [Neovim](https://github.com/neovim/neovim): Text Editor
+- [nwg-displays](https://github.com/nwg-piotr/nwg-displays): Display settings manager
+- [MusicBrainz Picard](https://picard.musicbrainz.org/): Audio file metadata editor
+- [pwvucontrol](https://flathub.org/en/apps/com.saivert.pwvucontrol): Audio settings
+- [Signal](https://archlinux.org/packages/extra/x86_64/signal-desktop/): Signal client
+- [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium-archlinux): Chromium without Google spyware
+- [VLC](https://www.videolan.org/vlc/): Media player
+- [VSCodium](https://vscodium.com/d): VSCode without Miscroft spyware
+- [Waypaper](https://github.com/anufrievroman/waypaper): Wallpaper manager
 
 ### Developer Tools
 
