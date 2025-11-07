@@ -72,9 +72,6 @@ hyprland-qtutils
 # Hyprland lock screen
 hyprlock
 
-# Allows GUI apps to request elevated privelages
-hyprpolkitagent
-
 # Blue light filter
 hyprsunset
 
@@ -131,6 +128,9 @@ pipewire-pulse
 
 # Media Player controls
 playerctl
+
+# Allows GUI apps to request elevated privelages
+polkit-gnome
 
 # Python
 python
