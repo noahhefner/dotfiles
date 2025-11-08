@@ -1,6 +1,9 @@
 # Password manager
 com.bitwarden.desktop
 
+# Live USB maker
+org.fedoraproject.MediaWriter
+
 # Screenshot utility
 org.flameshot.Flameshot
 
