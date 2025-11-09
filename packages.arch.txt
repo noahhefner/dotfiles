@@ -66,8 +66,8 @@ hypridle
 # Hyprland desktop environment
 hyprland
 
-# Hyprland utilities
-hyprland-qtutils
+# Hyprland GUI utilities
+hyprland-guiutils
 
 # Hyprland lock screen
 hyprlock
@@ -78,8 +78,8 @@ hyprsunset
 # Image utilities
 imagemagick
 
-# Wireless networking
-iwd
+# Collection of comment network programs (ie. hostname)
+inetutils
 
 # TUI file pager
 less

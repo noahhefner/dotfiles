@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=National Weather Service
+GenericName=Weather
+Comment=National Weather Service
+Exec=dotfiles-launch-webapp https://www.weather.gov/
+Terminal=false
+Type=Application
+Categories=Weather;
+Keywords=weather;noaa;
+Icon=/usr/share/icons/dotfiles/national-weather-service.png
+StartupNotify=false

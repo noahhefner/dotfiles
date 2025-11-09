@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Proton Mail
+GenericName=Email Client
+Comment=Secure Email
+Exec=dotfiles-launch-webapp https://mail.proton.me
+Terminal=false
+Type=Application
+Categories=Email;
+Keywords=email;mail;
+Icon=/usr/share/icons/dotfiles/proton-mail.png
+StartupNotify=false

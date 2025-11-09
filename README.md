@@ -39,6 +39,7 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop): Password manager
 - [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
 - [Document Viewier (Evince)](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
+- [Fedora Media Writer](https://flathub.org/en/apps/org.fedoraproject.MediaWriter): Tool for creating live USB drives
 - [Flameshot](https://flathub.org/en/apps/org.flameshot.Flameshot): Screenshot utility
 - [Gapless](https://flathub.org/en/apps/com.github.neithern.g4music): Music player
 - [Ghostty](https://ghostty.org/): Terminal emulator
@@ -81,5 +82,3 @@ Graphics drivers are not included in the package list. See the following pages f
 ### Surface Book 2
 
 During the Arch installation process, be sure to install [linux-firmware-marvell](https://archlinux.org/packages/core/any/linux-firmware-marvell/) as an additional package. This package is needed for the Marvell WiFi card.
-
-Additionally, install the [linux-surface](https://github.com/linux-surface/linux-surface) kernel.

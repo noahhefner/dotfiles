@@ -1,19 +1,27 @@
 #!/usr/bin/env bash
 
-# install custom scripts
+# Install custom scripts
 sudo cp ./scripts/* /usr/local/bin/
 
-# change oh-my-bash theme to powerline
+# Copy files for web apps
+sudo mkdir -p /usr/share/icons/dotfiles
+sudo cp ./web-apps/desktop/* /usr/share/applications/
+sudo cp ./web-apps/icons/* /usr/share/icons/dotfiles/
+
+# Change oh-my-bash theme to powerline
 sed -i "s/^OSH_THEME=\".*\"/OSH_THEME=\"powerline\"/" "$HOME/.bashrc"
 
-# enable avahi service
+# Enable avahi service
 sudo systemctl enable avahi-daemon
 
-# enable greetd service
+# Enable greetd service
 sudo systemctl enable greetd
 
-# enable docker service
+# Enable docker service
 sudo systemctl enable docker
 
-# add user to docker group
+# Add user to docker group
 sudo usermod -aG docker $USER
+
+# Reboot instructions
+echo "Setup is complete. Please reboot."
