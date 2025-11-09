@@ -60,6 +60,9 @@ greetd-regreet
 # Dependency for Flameshot
 grim
 
+# Static site generator
+hugo
+
 # Hyprland screen idle
 hypridle
 
