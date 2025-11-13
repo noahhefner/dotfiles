@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# This script automatically sets the system timezone whenever NetworkManager
+# connects to a network. It uses an IP geolocation API.
+#
+# Source: https://wiki.archlinux.org/title/NetworkManager#Automatically_set_the_timezone
+
+case "$2" in
+    up)
+        timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"
+    ;;
+esac

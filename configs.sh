@@ -37,6 +37,9 @@ mkdir -p $HOME/.config/hypr/
 mkdir -p $HOME/.config/mako
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/mako/config.jinja -e .env -o $HOME/.config/mako/config
 
+# NetworkManager auto-timezone script
+sudo cp ./config/NetworkManager/09-timezone /etc/NetworkManager/dispatcher.d/
+
 # waybar
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
