@@ -27,6 +27,9 @@ evince
 # TUI system spec viewer
 fastfetch
 
+# Screenshot utility
+flameshot
+
 # Flatpak
 flatpak
 
