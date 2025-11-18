@@ -4,9 +4,6 @@ com.bitwarden.desktop
 # Live USB maker
 org.fedoraproject.MediaWriter
 
-# Screenshot utility
-org.flameshot.Flameshot
-
 # Music Player
 com.github.neithern.g4music
 
