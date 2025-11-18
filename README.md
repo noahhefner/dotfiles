@@ -1,6 +1,6 @@
 # Linux Desktop
 
-Configuration files, applications, and setup for my Linux desktop.
+Configuration files, applications, and setup for my Linux desktop. Tailored for my Lenovo Thinkpad T430.
 
 ![desktop screenshot](screenshot.png)
 
@@ -42,10 +42,10 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - [Fedora Media Writer](https://flathub.org/en/apps/org.fedoraproject.MediaWriter): Tool for creating live USB drives
 - [Flameshot](https://flathub.org/en/apps/org.flameshot.Flameshot): Screenshot utility
 - [Gapless](https://flathub.org/en/apps/com.github.neithern.g4music): Music player
-- [Ghostty](https://ghostty.org/): Terminal emulator
 - [Gnome Boxes](https://archlinux.org/packages/extra/x86_64/gnome-boxes/): Virtual Machines
 - [Gnome Calculator](https://archlinux.org/packages/extra/x86_64/gnome-calculator/): Calculator
 - [Gnome Disk Utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/): Disk analyzer
+- [Kitty](https://github.com/kovidgoyal/kitty): Terminal emulator
 - [LibreOffice](https://www.libreoffice.org/): Office suite
 - [LibreWolf](https://librewolf.net/): Firefox without Mozilla spyware
 - [LocalSend](https://localsend.org/): Airdrop alternative
@@ -73,16 +73,3 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - Node
 - Python
 - uv
-
-## Installation Notes
-
-### Graphics Drivers
-
-Graphics drivers are not included in the package list. See the following pages for graphics drivers:
-
-- [Nvidia](https://wiki.archlinux.org/title/NVIDIA)
-- [AMD](https://wiki.archlinux.org/title/AMDGPU)
-
-### Surface Book 2
-
-During the Arch installation process, be sure to install [linux-firmware-marvell](https://archlinux.org/packages/core/any/linux-firmware-marvell/) as an additional package. This package is needed for the Marvell WiFi card.

@@ -102,6 +102,11 @@ mako
 # Man pages
 man-db
 
+# Open source OpenGL implementation
+# Installing this fixes an issue where multiple workspaces
+# don't show up in waybar
+mesa
+
 # Text editor
 nano
 
