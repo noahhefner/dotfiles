@@ -10,6 +10,9 @@ blueberry
 # Control display brightness
 brightnessctl
 
+# Camera app
+cheese
+
 # Printing
 cups
 cups-browsed
