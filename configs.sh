@@ -34,6 +34,9 @@ sudo ./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/re
 mkdir -p $HOME/.config/hypr/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/hypr/hyprland.jinja.conf -e .env -o $HOME/.config/hypr/hyprland.conf
 
+# hyprsunset
+cp ./config/hypr/hyprsunset.conf $HOME/.config/hypr/
+
 # mako
 mkdir -p $HOME/.config/mako
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/mako/config.jinja -e .env -o $HOME/.config/mako/config
