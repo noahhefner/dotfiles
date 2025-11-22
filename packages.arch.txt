@@ -48,9 +48,6 @@ fzf
 # Display color temperature
 gammastep
 
-# Terminal
-ghostty
-
 # Gnome apps
 gnome-boxes
 gnome-calculator
@@ -89,6 +86,9 @@ imagemagick
 
 # Collection of comment network programs (ie. hostname)
 inetutils
+
+# Terminal
+kitty
 
 # TUI file pager
 less
