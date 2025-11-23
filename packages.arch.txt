@@ -13,6 +13,9 @@ blueberry
 # Control display brightness
 brightnessctl
 
+# System stats TUI
+btop
+
 # Camera app
 cheese
 
