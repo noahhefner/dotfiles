@@ -1,3 +1,6 @@
+# For transferring files to/from Android phone via USB
+android-file-transfer
+
 # Rendezvous / Bonjour protocol implementation
 avahi
 
