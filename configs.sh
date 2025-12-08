@@ -5,21 +5,9 @@ cd templater
 uv sync
 cd ..
 
-# oh-my-bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
-
 # AstroNvim
 git clone --depth 1 https://github.com/AstroNvim/template $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
-
-# Kitty
-mkdir -p $HOME/.config/kitty
-./templater/.venv/bin/python ./templater/templater.py -t ./config/kitty/kitty.jinja.conf -e .env -o $HOME/.config/kitty/kitty.conf
-cp ./config/kitty/current-theme.conf $HOME/.config/kitty/
-
-# uwsm
-mkdir -p $HOME/.config/uwsm
-cp ./config/uwsm/env $HOME/.config/uwsm
 
 # fuzzel
 mkdir -p $HOME/.config/fuzzel/
@@ -37,12 +25,27 @@ mkdir -p $HOME/.config/hypr/
 # hyprsunset
 cp ./config/hypr/hyprsunset.conf $HOME/.config/hypr/
 
+# Kitty
+mkdir -p $HOME/.config/kitty
+./templater/.venv/bin/python ./templater/templater.py -t ./config/kitty/kitty.jinja.conf -e .env -o $HOME/.config/kitty/kitty.conf
+cp ./config/kitty/current-theme.conf $HOME/.config/kitty/
+
 # mako
 mkdir -p $HOME/.config/mako
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/mako/config.jinja -e .env -o $HOME/.config/mako/config
 
 # NetworkManager auto-timezone script
 sudo cp ./config/NetworkManager/09-timezone /etc/NetworkManager/dispatcher.d/
+
+# oh-my-bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
+
+# uwsm
+mkdir -p $HOME/.config/uwsm
+cp ./config/uwsm/env $HOME/.config/uwsm
+
+# VSCodium
+cp ./config/VSCodium/settings.json $HOME/.config/VSCodium/User/
 
 # waybar
 mkdir -p $HOME/.config/waybar/
