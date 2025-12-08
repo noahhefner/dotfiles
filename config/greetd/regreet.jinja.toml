@@ -1,5 +1,5 @@
 [background]
-path = "/usr/share/backgrounds/bigsur.jpg"
+path = "/usr/share/backgrounds/glitch.jpg"
 # How the background image covers the screen if the aspect ratio doesn't match
 # Available values: "Fill", "Contain", "Cover", "ScaleDown"
 # Refer to: https://docs.gtk.org/gtk4/enum.ContentFit.html
@@ -37,7 +37,7 @@ greeting_msg = "Welcome"
 [widget.clock]
 # strftime format argument
 # See https://docs.rs/jiff/0.1.14/jiff/fmt/strtime/index.html#conversion-specifications
-format = "%a %H:%M"
+format = "%A - %e %B %Y - %I:%M %p"
 
 # How often to update the text
 #resolution = "500ms"
