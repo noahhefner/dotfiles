@@ -1,7 +1,7 @@
 # For transferring files to/from Android phone via USB
 android-file-transfer
 
-# Rendezvous / Bonjour protocol implementation
+# Rendezvous / Bonjour protocol
 avahi
 
 # Build tools
@@ -36,9 +36,6 @@ evince
 # TUI system spec viewer
 fastfetch
 
-# Screenshot utility
-flameshot
-
 # Flatpak
 flatpak
 
@@ -66,7 +63,7 @@ go
 greetd
 greetd-regreet
 
-# Dependency for Flameshot
+# Screenshot utility
 grim
 
 # Static site generator
@@ -105,16 +102,14 @@ libreoffice-still
 # Gnome package for storing secrets and passwords
 libsecret
 
+# Gnome image viewer
+loupe
+
 # Notifications
 mako
 
 # Man pages
 man-db
-
-# Open source OpenGL implementation
-# Installing this fixes an issue where multiple workspaces
-# don't show up in waybar
-mesa
 
 # Text editor
 nano
@@ -125,7 +120,7 @@ nautilus
 # Text editor
 neovim
 
-# Networking
+# Networking (supplies nmtui, which is used in Waybar config)
 networkmanager
 
 # Node
@@ -146,8 +141,11 @@ pipewire-audio
 pipewire-alsa
 pipewire-pulse
 
-# Media Player controls
+# Media Player controls (required by Hyprland keybindings for audio control)
 playerctl
+
+# Performant NPM (Node Package Manager)
+pnpm
 
 # Allows GUI apps to request elevated privelages
 polkit-gnome
@@ -167,6 +165,10 @@ ripgrep
 
 # Signal client
 signal-desktop
+
+# For selecting a region of the screen in a Wayland compositor
+# Used for screenshots
+slurp
 
 # Desktop background
 swaybg

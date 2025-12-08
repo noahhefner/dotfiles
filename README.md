@@ -30,17 +30,14 @@ Reboot the machine, then run:
 . post-reboot.sh
 ```
 
-## Packages
-
-For a full list of installed packages, see `packages.arch.txt`, `packages.aur.txt`, and `packages.flatpak.txt`.
-
 ### Applications
 
+- [Android File Transfer for Linux](https://whoozle.github.io/android-file-transfer-linux/): MTP client
 - [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop): Password manager
 - [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
+- [Cheese](https://archlinux.org/packages/extra/x86_64/cheese/): Camera application
 - [Document Viewier (Evince)](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
 - [Fedora Media Writer](https://flathub.org/en/apps/org.fedoraproject.MediaWriter): Tool for creating live USB drives
-- [Flameshot](https://flathub.org/en/apps/org.flameshot.Flameshot): Screenshot utility
 - [Gapless](https://flathub.org/en/apps/com.github.neithern.g4music): Music player
 - [Gnome Boxes](https://archlinux.org/packages/extra/x86_64/gnome-boxes/): Virtual Machines
 - [Gnome Calculator](https://archlinux.org/packages/extra/x86_64/gnome-calculator/): Calculator
@@ -49,7 +46,7 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - [LibreOffice](https://www.libreoffice.org/): Office suite
 - [LibreWolf](https://librewolf.net/): Firefox without Mozilla spyware
 - [LocalSend](https://localsend.org/): Airdrop alternative
-- [mako](https://github.com/emersion/mako): Notifications
+- [Loupe](https://apps.gnome.org/Loupe/): Gnome image viewer
 - [National Weather Service (Web App)](https://www.weather.gov/): Weather from the National Weather Service
 - [Nautilus](https://apps.gnome.org/Nautilus/): File manager
 - [Neovim](https://github.com/neovim/neovim): Text Editor
@@ -71,5 +68,10 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 - Docker
 - Go
 - Node
+- pnpm
 - Python
 - uv
+
+## Packages
+
+For a full list of installed packages, see `packages.arch.txt`, `packages.aur.txt`, and `packages.flatpak.txt`.

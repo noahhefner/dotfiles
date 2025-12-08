@@ -7,7 +7,7 @@ from dotenv import dotenv_values
 from jinja2 import Environment, FileSystemLoader, Template
 
 
-def load_env_vars(env_path: Path) -> Dict[str, str]:
+def load_env_vars(env_path: Path) -> Dict[str, str | None]:
     """
     Load key-value pairs from a .env file.
 
@@ -15,7 +15,7 @@ def load_env_vars(env_path: Path) -> Dict[str, str]:
         env_path (Path): The path to the .env file containing variable definitions.
 
     Returns:
-        Dict[str, str]: A dictionary mapping environment variable names to their values.
+        Dict[str, str| None]: Dictionary mapping environment variable names to their values.
     """
     return dotenv_values(str(env_path))
 

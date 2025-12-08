@@ -3,6 +3,9 @@
 # Install custom scripts
 sudo cp ./scripts/* /usr/local/bin/
 
+# Create directory for screenshots
+mkdir -p $HOME/Pictures/Screenshots
+
 # Copy files for web apps
 sudo mkdir -p /usr/share/icons/dotfiles
 sudo cp ./web-apps/desktop/* /usr/share/applications/
