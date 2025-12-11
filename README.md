@@ -9,25 +9,25 @@ Configuration files, applications, and setup for my Linux desktop. Tailored for 
 Execute scripts:
 
 ```sh
-. setup.sh
+./setup.sh
 ```
 
 ```sh
-. install.sh
+./install.sh
 ```
 
 ```sh
-. configs.sh
+./configs.sh
 ```
 
 ```sh
-. post-setup.sh
+./post-setup.sh
 ```
 
 Reboot the machine, then run:
 
 ```sh
-. post-reboot.sh
+./post-reboot.sh
 ```
 
 ### Applications
