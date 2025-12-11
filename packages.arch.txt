@@ -126,8 +126,14 @@ networkmanager
 # Node
 nodejs
 
+# Google Noto Fonts
+noto-fonts
+
 # GUI for managing displays
 nwg-displays
+
+# Open Broadcaster Software (Screen Recordings)
+obs-studio
 
 # SSH utils
 openssh
