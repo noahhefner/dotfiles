@@ -1,9 +1,6 @@
 # VSCode w/o Microsoft spyware
 vscodium-bin
 
-# Firefox w/o Mozilla spyware
-librewolf-bin
-
 # Chromium w/o Google spyware
 ungoogled-chromium-bin
 
