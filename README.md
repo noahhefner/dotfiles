@@ -44,7 +44,6 @@ Reboot the machine, then run:
 - [Gnome Disk Utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/): Disk analyzer
 - [Kitty](https://github.com/kovidgoyal/kitty): Terminal emulator
 - [LibreOffice](https://www.libreoffice.org/): Office suite
-- [LibreWolf](https://librewolf.net/): Firefox without Mozilla spyware
 - [LocalSend](https://localsend.org/): Airdrop alternative
 - [Loupe](https://apps.gnome.org/Loupe/): Gnome image viewer
 - [National Weather Service (Web App)](https://www.weather.gov/): Weather from the National Weather Service
