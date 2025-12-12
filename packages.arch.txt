@@ -126,8 +126,9 @@ networkmanager
 # Node
 nodejs
 
-# Google Noto Fonts
+# Google Noto Fonts + Emojis
 noto-fonts
+noto-fonts-emoji
 
 # GUI for managing displays
 nwg-displays
