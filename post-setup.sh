@@ -14,8 +14,8 @@ sudo cp ./web-apps/icons/* /usr/share/icons/dotfiles/
 # Change oh-my-bash theme to powerline
 sed -i "s/^OSH_THEME=\".*\"/OSH_THEME=\"powerline\"/" "$HOME/.bashrc"
 
-# Set Librewolf as default browser
-xdg-settings set default-web-browser librewolf.desktop
+# Set (UnGoogled) Chromium as default browser
+xdg-settings set default-web-browser chromium.desktop
 
 # Enable avahi service
 sudo systemctl enable avahi-daemon
