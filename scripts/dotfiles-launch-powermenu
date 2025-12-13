@@ -1,17 +1,4 @@
 #!/usr/bin/env bash
 
-entries="Logout\nSuspend\nReboot\nShutdown"
-selected=$(echo -e $entries|fuzzel --minimal-lines 0 --dmenu --cache /dev/null)
-
-echo $selected
-
-case $selected in
-  Logout)
-    hyprctl dispatch exit;;
-  Suspend)
-    exec systemctl suspend;;
-  Reboot)
-    exec systemctl reboot;;
-  Shutdown)
-    exec systemctl poweroff;;
-esac
+# Run custom power menu
+power-menu.jsx

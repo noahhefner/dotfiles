@@ -40,6 +40,10 @@ sudo cp ./config/NetworkManager/09-timezone /etc/NetworkManager/dispatcher.d/
 # oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 
+# Custom Power Menu
+sudo cp ./power-menu/power-menu.jsx /usr/local/bin/
+sudo ./templater/.venv/bin/python ./templater/templater.py -t ./power-menu/style.jinja.css -e .env -o /usr/local/bin/style.css
+
 # uwsm
 mkdir -p $HOME/.config/uwsm
 cp ./config/uwsm/env $HOME/.config/uwsm

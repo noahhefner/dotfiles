@@ -1,11 +1,14 @@
-# VSCode w/o Microsoft spyware
-vscodium-bin
+# AGS (for custom power menu)
+aylurs-gtk-shell-git
+
+# Airdrop for linux
+localsend-bin
 
 # Chromium w/o Google spyware
 ungoogled-chromium-bin
 
-# Airdrop for linux
-localsend-bin
+# VSCode w/o Microsoft spyware
+vscodium-bin
 
 # Wallpaper manager for Wayland
 waypaper
