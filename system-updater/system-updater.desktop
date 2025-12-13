@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=System Update
+Comment=Update Arch, AUR, and Flatpak packages
+Exec=dotfiles-launch-system-updater
+Icon=system-software-update
+Terminal=false
+Categories=System;Utility;
+StartupNotify=true
