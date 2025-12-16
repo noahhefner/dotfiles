@@ -1,7 +1,7 @@
 .window {
     background-color: rgba(0,0,0,0.9);
-    border-radius: 4px;
-    border: 3px solid #{{ PRIMARY }};
+    border-radius: {{ BORDER_RADIUS }}px;
+    border: {{ BORDER_WIDTH }}px solid #{{ PRIMARY }};
 }
 
 .button {
@@ -14,10 +14,10 @@
     background: #ffffff1c;
 }
 .button:first-child{
-    border-radius: 4px 0 0 4px;
+    border-radius: {{ BORDER_RADIUS }}px 0 0 {{ BORDER_RADIUS }}px;
 }
 .button:last-child{
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 {{ BORDER_RADIUS }}px {{ BORDER_RADIUS }}px 0;
 }
 
 .buttonIcon {
@@ -35,5 +35,5 @@
     padding: 5px;
     background-color: transparent;
     border: #74747449 solid 1px;
-    border-radius: 4px;
+    border-radius: {{ BORDER_RADIUS }}px;
 }
