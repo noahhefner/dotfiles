@@ -46,28 +46,19 @@ if ! sudo -v; then
     exit 1
 fi
 
-# Keep sudo alive in background
-while true; do
-    sudo -n true
-    sleep 60
-    kill -0 "$$" || exit
-done 2>/dev/null &
-
 # ---------------------------
 # Step 0: Detect Chromium version before updates
 # ---------------------------
 chromium_pre=""
 if command -v chromium &>/dev/null; then
     chromium_pre=$(chromium --version 2>/dev/null | awk '{print $2}')
-    echo "Chromium version before update: $chromium_pre"
 fi
-echo
 
 # ---------------------------
 # Step 1: Update pacman packages
 # ---------------------------
 echo "📦 Updating pacman packages..."
-if ! sudo pacman -Syu; then
+if ! sudo pacman -Syu --noconfirm --needed; then
     echo "❌ pacman update failed."
     FAILED=1
 fi
@@ -82,7 +73,7 @@ if command -v yay &>/dev/null; then
     else
         echo
         echo "📦 Updating AUR packages with yay..."
-        if ! yay -Syu; then
+        if ! yay -Syu --noconfirm --needed; then
             echo "❌ AUR update failed."
             FAILED=1
         fi
@@ -105,7 +96,7 @@ fi
 if command -v flatpak &>/dev/null; then
     echo
     echo "📦 Updating Flatpak packages..."
-    if ! flatpak update; then
+    if ! flatpak update --noninteractive; then
         echo "❌ Flatpak update failed."
         FAILED=1
     fi
@@ -120,8 +111,6 @@ fi
 chromium_post=""
 if command -v chromium &>/dev/null; then
     chromium_post=$(chromium --version 2>/dev/null | awk '{print $2}')
-    echo
-    echo "Chromium version after update: $chromium_post"
 fi
 
 # ---------------------------
