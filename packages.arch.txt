@@ -206,6 +206,7 @@ uwsm
 
 # Media playback
 vlc
+vlc-plugin-ffmpeg
 
 # Desktop status bar
 waybar
