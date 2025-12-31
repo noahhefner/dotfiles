@@ -75,3 +75,20 @@ Reboot the machine, then run:
 ## Packages
 
 For a full list of installed packages, see `packages.arch.txt`, `packages.aur.txt`, and `packages.flatpak.txt`.
+
+## Troubleshooting
+
+**Bluetooth Not Working**
+
+If no devices are showing up in Blueberry, check if `bluetooth.service` is enabled and running.
+
+```sh
+sudo systemctl status bluetooth.service
+```
+
+Enable and start it with:
+
+```sh
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+```
