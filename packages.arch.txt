@@ -8,16 +8,13 @@ avahi
 base-devel
 
 # Bluetooth
-blueberry
+blueman
 
 # Control display brightness
 brightnessctl
 
 # System stats TUI
 btop
-
-# Camera app
-cheese
 
 # Printing
 cups

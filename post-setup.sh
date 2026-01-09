@@ -23,6 +23,9 @@ sudo systemctl enable avahi-daemon
 # Enable greetd service
 sudo systemctl enable greetd
 
+# Enable bluetooth service
+sudo systemctl enable bluetooth
+
 # Enable docker service
 sudo systemctl enable docker
 
