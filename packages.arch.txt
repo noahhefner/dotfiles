@@ -208,6 +208,9 @@ vlc-plugin-ffmpeg
 # Desktop status bar
 waybar
 
+# For system update script
+wget
+
 # Domain / IP lookup utility
 whois
 
