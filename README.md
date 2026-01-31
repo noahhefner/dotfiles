@@ -30,12 +30,15 @@ Reboot the machine, then run:
 ./post-reboot.sh
 ```
 
+## First Time Setup
+
+Run `nwg-displays` (should appear as "Display Settings" in Fuzzel) and configure your display settings. Applying the display settings through `nwg-displays` will generate `~/.config/hypr/monitors.conf` with your display settings.
+
 ### Applications
 
 - [Android File Transfer for Linux](https://whoozle.github.io/android-file-transfer-linux/): MTP client
 - [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop): Password manager
-- [Blueberry](https://archlinux.org/packages/extra/any/blueberry/): Bluetooth device manager
-- [Cheese](https://archlinux.org/packages/extra/x86_64/cheese/): Camera application
+- [Blueman](https://github.com/blueman-project/blueman): Bluetooth device manager
 - [Document Viewier (Evince)](https://wiki.archlinux.org/title/GNOME/Document_viewer): Gnome document viewer
 - [Fedora Media Writer](https://flathub.org/en/apps/org.fedoraproject.MediaWriter): Tool for creating live USB drives
 - [Gapless](https://flathub.org/en/apps/com.github.neithern.g4music): Music player
@@ -80,7 +83,7 @@ For a full list of installed packages, see `packages.arch.txt`, `packages.aur.tx
 
 **Bluetooth Not Working**
 
-If no devices are showing up in Blueberry, check if `bluetooth.service` is enabled and running.
+If no devices are showing up in Blueman, check if `bluetooth.service` is enabled and running.
 
 ```sh
 sudo systemctl status bluetooth.service
