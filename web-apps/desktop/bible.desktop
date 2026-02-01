@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=ESV Bible
+GenericName=Bible
+Comment=Bible ESV Translation
+Exec=dotfiles-launch-webapp https://www.esv.org/
+Terminal=false
+Type=Application
+Categories=Books;
+Keywords=bible;esv;scripture;
+Icon=/usr/share/icons/dotfiles/bible.png
+StartupNotify=false
