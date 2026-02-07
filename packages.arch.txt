@@ -78,6 +78,9 @@ hyprland-guiutils
 # Hyprland lock screen
 hyprlock
 
+# Desktop background
+hyprpaper
+
 # Blue light filter
 hyprsunset
 
@@ -167,15 +170,15 @@ qt6-wayland
 # Search tool
 ripgrep
 
+# Screenshot annotation (needed for screenshot script)
+satty
+
 # Signal client
 signal-desktop
 
 # For selecting a region of the screen in a Wayland compositor
 # Used for screenshots
 slurp
-
-# Desktop background
-swaybg
 
 # GUI for cups (printing)
 system-config-printer

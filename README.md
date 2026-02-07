@@ -34,7 +34,7 @@ Reboot the machine, then run:
 
 Run `nwg-displays` (should appear as "Display Settings" in Fuzzel) and configure your display settings. Applying the display settings through `nwg-displays` will generate `~/.config/hypr/monitors.conf` with your display settings.
 
-### Applications
+## Applications
 
 - [Android File Transfer for Linux](https://whoozle.github.io/android-file-transfer-linux/): MTP client
 - [Bitwarden](https://flathub.org/en/apps/com.bitwarden.desktop): Password manager
@@ -66,7 +66,7 @@ Run `nwg-displays` (should appear as "Display Settings" in Fuzzel) and configure
 - [Waypaper](https://github.com/anufrievroman/waypaper): Wallpaper manager
 - [YouTube (Web App)](https://youtube.com): Videos
 
-### Developer Tools
+## Developer Tools
 
 - Docker
 - Go
@@ -78,6 +78,16 @@ Run `nwg-displays` (should appear as "Display Settings" in Fuzzel) and configure
 ## Packages
 
 For a full list of installed packages, see `packages.arch.txt`, `packages.aur.txt`, and `packages.flatpak.txt`.
+
+## System Updater
+
+Always use the "System Update" application in Fuzzel to update the system. This is a custom script that updates all Arch packages, AUR packages, and Flatpaks. Using this script ensures that `yay` does not break due to missed system updates. Additionally, this script downloads and installs the latest version of Google Widevine whenever Ungoogled Chromium is updated.
+
+![System Updater](updater_screenshot.png)
+
+## Screenshot Utility
+
+Use `Super + S` to take a screenshot.
 
 ## Troubleshooting
 

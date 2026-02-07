@@ -9,6 +9,3 @@ ungoogled-chromium-bin
 
 # VSCode w/o Microsoft spyware
 vscodium-bin
-
-# Wallpaper manager for Wayland
-waypaper
