@@ -87,7 +87,7 @@ hyprsunset
 # Image utilities
 imagemagick
 
-# Collection of comment network programs (ie. hostname)
+# Collection of common network programs (ie. hostname)
 inetutils
 
 # Terminal
@@ -210,6 +210,9 @@ vlc-plugin-ffmpeg
 
 # Desktop status bar
 waybar
+
+# Tool for displaying info about Wayland compositor
+wayland-utils
 
 # For system update script
 wget

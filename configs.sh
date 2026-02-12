@@ -22,6 +22,9 @@ sudo ./templater/.venv/bin/python ./templater/templater.py -t ./config/greetd/re
 mkdir -p $HOME/.config/hypr/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/hypr/hyprland.jinja.conf -e .env -o $HOME/.config/hypr/hyprland.conf
 
+# hyprpaper
+cp ./config/hypr/hyprpaper.conf $HOME/.config/hypr/
+
 # hyprsunset
 cp ./config/hypr/hyprsunset.conf $HOME/.config/hypr/
 
@@ -59,10 +62,6 @@ cp ./config/VSCodium/settings.json $HOME/.config/VSCodium/User/
 mkdir -p $HOME/.config/waybar/
 cp ./config/waybar/config.jsonc $HOME/.config/waybar/
 ./templater/.venv/bin/python ./templater/templater.py -t ./config/waybar/style.jinja.css -e .env -o $HOME/.config/waybar/style.css
-
-# waypaper
-mkdir -p $HOME/.config/waypaper/
-cp ./config/waypaper/config.ini $HOME/.config/waypaper/
 
 # wallpapers
 sudo mkdir -p /usr/share/backgrounds/
