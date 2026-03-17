@@ -29,6 +29,9 @@ sudo systemctl enable bluetooth
 # Enable docker service
 sudo systemctl enable docker
 
+# Enable cups service (printing)
+sudo systemctl enable cups.service
+
 # Add user to docker group
 sudo usermod -aG docker $USER
 
