@@ -233,3 +233,6 @@ xdg-utils
 
 # X server compatibility layer for Wayland
 xorg-xwayland
+
+# Better cd
+zoxide
