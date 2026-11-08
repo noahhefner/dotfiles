@@ -1,5 +1,2 @@
-# Live USB maker
-org.fedoraproject.MediaWriter
-
 # Notes
 org.standardnotes.standardnotes

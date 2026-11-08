@@ -1,5 +1,11 @@
+# Brave Browser
+brave-bin
+
 # Airdrop for linux
 localsend-bin
+
+# Minecraft
+minecraft-launcher
 
 # Chromium w/o Google spyware
 ungoogled-chromium-bin

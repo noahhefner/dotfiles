@@ -1,14 +1,11 @@
+# This file lists packages that are not installed during the
+# archinstall script. See README for installation instructions.
+
 # For transferring files to/from Android phone via USB
 android-file-transfer
 
-# Rendezvous / Bonjour protocol
-avahi
-
 # Build tools
 base-devel
-
-# System stats TUI
-btop
 
 # Printing
 cups
@@ -26,9 +23,6 @@ fastfetch
 
 # Flatpak
 flatpak
-
-# Provides font information to apps
-fontconfig
 
 # Printer support libraries
 foomatic-db-engine
@@ -69,40 +63,22 @@ nano
 # Text editor
 neovim
 
-# Networking (supplies nmtui)
-networkmanager
-
 # Node
 nodejs
+npm
 
 # Google Noto Fonts + Emojis
 noto-fonts
 noto-fonts-emoji
 
-# Open Broadcaster Software (Screen Recordings)
-obs-studio
-
-# SSH utils
-openssh
-
 # Audio file metadata editor
 picard
-
-# Media Player controls
-playerctl
 
 # Performant NPM (Node Package Manager)
 pnpm
 
 # Python
 python
-
-# Python bindings for GLib/GObject/GIO/GTK
-python-gobject
-
-# QT libraries for Wayland
-qt5-wayland
-qt6-wayland
 
 # Search tool
 ripgrep
@@ -122,9 +98,6 @@ tmux
 # List files in terminal
 tree
 
-# Nerd font
-ttf-cascadia-code-nerd
-
 # Compression utility
 unzip
 
@@ -135,17 +108,11 @@ uv
 vlc
 vlc-plugin-ffmpeg
 
-# Tool for displaying info about Wayland compositor
-wayland-utils
-
 # For system update script
 wget
 
 # Domain / IP lookup utility
 whois
-
-# XDG
-xdg-utils
 
 # Better cd
 zoxide
