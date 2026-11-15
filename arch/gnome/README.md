@@ -1,4 +1,4 @@
-# Arch with Gnome Setup
+# Arch + Gnome
 
 Arch Linux with Gnome desktop environment.
 
