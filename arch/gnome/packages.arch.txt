@@ -1,0 +1,118 @@
+# This file lists packages that are not installed during the
+# archinstall script. See README for installation instructions.
+
+# For transferring files to/from Android phone via USB
+android-file-transfer
+
+# Build tools
+base-devel
+
+# Printing
+cups
+cups-browsed
+cups-filters
+cups-pdf
+
+# Docker
+docker
+docker-buildx
+docker-compose
+
+# TUI system spec viewer
+fastfetch
+
+# Flatpak
+flatpak
+
+# Printer support libraries
+foomatic-db-engine
+foomatic-db-nonfree
+foomatic-db-nonfree-ppds
+foomatic-db-ppds
+
+# Firmware updater
+fwupd
+
+# Fuzzy find
+fzf
+
+# Golang
+go
+
+# Static site generator
+hugo
+
+# Image utilities
+imagemagick
+
+# Collection of common network programs (ie. hostname)
+inetutils
+
+# TUI file pager
+less
+
+# Office Suite
+libreoffice-still
+
+# Man pages
+man-db
+
+# Text editor
+nano
+
+# Text editor
+neovim
+
+# Node
+nodejs
+npm
+
+# Google Noto Fonts + Emojis
+noto-fonts
+noto-fonts-emoji
+
+# Audio file metadata editor
+picard
+
+# Performant NPM (Node Package Manager)
+pnpm
+
+# Python
+python
+
+# Search tool
+ripgrep
+
+# Transfer files via SSH
+rsync
+
+# Signal client
+signal-desktop
+
+# Command summarizer
+tldr
+
+# Terminal multiplexer
+tmux
+
+# List files in terminal
+tree
+
+# Compression utility
+unzip
+
+# Python package manager
+uv
+
+# Media playback
+vlc
+vlc-plugin-ffmpeg
+
+# For system update script
+wget
+
+# Domain / IP lookup utility
+whois
+
+# Better cd
+zoxide

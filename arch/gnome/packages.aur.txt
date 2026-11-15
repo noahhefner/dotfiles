@@ -1,0 +1,17 @@
+# Brave Browser
+brave-bin
+
+# Airdrop for linux
+localsend-bin
+
+# Minecraft
+minecraft-launcher
+
+# System Updater
+topgrade-bin
+
+# Chromium w/o Google spyware
+ungoogled-chromium-bin
+
+# VSCode w/o Microsoft spyware
+vscodium-bin
