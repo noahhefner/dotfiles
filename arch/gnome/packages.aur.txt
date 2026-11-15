@@ -7,6 +7,9 @@ localsend-bin
 # Minecraft
 minecraft-launcher
 
+# Raspberry Pi Imager
+rpi-imager
+
 # System Updater
 topgrade-bin
 
