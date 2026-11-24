@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+orphans=$(pacman -Qtdq)
+if [ -n "$orphans" ]; then
+    sudo pacman -Rns $orphans
+else
+    echo "No orphaned packages found."
+fi

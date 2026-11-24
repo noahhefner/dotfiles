@@ -73,6 +73,10 @@ paru -S "${packages[@]}"
 git clone --depth 1 https://github.com/AstroNvim/template $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
 
+# Kitty terminal
+mkdir -p $HOME/.config/kitty
+cp $HOME/dotfiles/config/kitty/kitty.conf $HOME/.config/kitty/
+
 # oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 
@@ -103,6 +107,9 @@ sudo systemctl enable cups.service
 
 # Add user to docker group
 sudo usermod -aG docker $USER
+
+# Install custom scripts
+sudo find $HOME/dotfiles/arch/gnome/scripts -maxdepth 1 -type f -exec install -m 755 {} /usr/local/bin/ \;
 ```
 
 6. Reboot the system.

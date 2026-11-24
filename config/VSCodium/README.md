@@ -22,7 +22,7 @@ cp $HOME/dotfiles/config/VSCodium/settings.json $HOME/.config/VSCodium/User/sett
 To backup extensions:
 
 ```sh
-codium --list-extensions > $HOME/dotfiles/config/VSCodium/codium-extensions.txt
+codium --list-extensions >| $HOME/dotfiles/config/VSCodium/codium-extensions.txt
 ```
 
 To install extensions from list:

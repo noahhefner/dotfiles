@@ -4,3 +4,4 @@ ms-python.python
 ms-python.vscode-python-envs
 tamasfe.even-better-toml
 teabyii.ayu
+vscode-icons-team.vscode-icons

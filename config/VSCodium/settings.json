@@ -3,5 +3,9 @@
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'monospace', monospace",
     "editor.minimap.enabled": false,
     "workbench.sideBar.location": "right",
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.layoutControl.enabled": false,
+    "workbench.browser.showInTitleBar": true,
+    "workbench.browser.searchEngine": "duckduckgo"
 }
